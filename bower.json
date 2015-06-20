@@ -23,6 +23,13 @@
     "tests"
   ],
   "dependencies": {
-    "bootstrap-fileinput": "~4.2.2"
+    "bootstrap-fileinput": "~4.2.2",
+    "angular": "~1.4.0",
+    "angular-route": "~1.4.0",
+    "angular-loader": "~1.4.0",
+    "angular-mocks": "~1.4.0",
+    "html5-boilerplate": "~5.2.0",
+    "angular-masonry": "~0.11.0",
+    "angular-ui-router": "~0.2.15"
   }
 }

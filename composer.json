@@ -1,0 +1,13 @@
+{
+    "name": "kentucky-roberts/palmermotorsports.com",
+    "description": "Marketing and eCommerce site for palmermotorsportsnc.com.  Using OctoberCMS and OEM datafeed REST for ecommerce products, and Stripe Api for checkout",
+    "type": "PHP",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "kentucky-roberts",
+            "email": "croberts@lknpro.com"
+        }
+    ],
+    "require": {}
+}

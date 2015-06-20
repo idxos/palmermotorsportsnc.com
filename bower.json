@@ -1,0 +1,28 @@
+{
+  "name": "palmermotorsportsnc.com",
+  "version": "0.1.0",
+  "homepage": "https://github.com/idxos/palmermotorsportsnc.com",
+  "authors": [
+    "kentucky-roberts <croberts@lknpro.com>"
+  ],
+  "description": "Custom website for Palmer Motorsports, big data, eCommerce goodness.",
+  "main": "index.php",
+  "keywords": [
+    "motorsports",
+    "dirt",
+    "bike",
+    "motocrposs",
+    "ecommerce"
+  ],
+  "license": "MIT",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "bootstrap-fileinput": "~4.2.2"
+  }
+}

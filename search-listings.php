@@ -39,16 +39,43 @@
 
     <div class="main-container">
         <div class="container">
-            <div class="row">
 
+            <div class="row">
                 <div class="col-md-9 page-content">
+                    
+                
+                
+
+                    <div class="inner-box category-content">
+                      <h2 class="title-2 uppercase"><strong> <i class="icon-docs"></i> Search Listings</strong> </h2>
+                      
+                      <div class="row">
+                            <section class="col-sm-12">
+                                
+                            </section>   
+                        </div><!--/.row-->
+
+                        <h2 class="title-2 uppercase"><strong> <i class="icon-docs"></i> Another Section</strong> </h2>
+                        <div class="row">
+                            <section class="col-xs-12">
+                              im empty
+                            </section>
+                        </div>
+                    </div><!-- End of inner-box -->
+
+
+
+
+
+
+
+
                     <?php include('forms/page-content-search-listings.php'); ?>
-                </div>
-                
-                
+                </div><!--/.col-->
                 <div class="col-md-3 reg-sidebar">
                     <aside>
                         <?php include('forms/page-sidebar-search-listings.php'); ?>
+                        <?php include('global_embeds/sidebar-settings-togle.php'); ?>
                     </aside>
                 </div>
                 
@@ -85,16 +112,19 @@
 <script src="assets/js/checkbox.js" type="text/javascript"></script>
 <script src="assets/js/scrollbar.js" type="text/javascript"></script>
 
+
 <script type="text/javascript">
     $("input[type=radio]").checkbox();
     
     $("input[type=checkbox]").checkbox({
         toggle: true
     });
-    
+
     $(".target").scrollbar({
         horizontal: true
     });
 </script>
+
+
 </body>
 </html>

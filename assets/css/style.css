@@ -1,9 +1,8 @@
-@charset "utf-8";
-@import url("assets/fonts/font-awesome.css");
-@import url("assets/fonts/fontello.css");
-@import url("assets/fonts/longshadow.css");
-@import url("assets/css/jquery.fs.scroller.css");
-@import url("assets/css/jquery.fs.selecter.css");
+@import url("font-awesome.css");
+@import url("fontello.css");
+@import url("longshadow.css");
+@import url("jquery.fs.scroller.css");
+@import url("jquery.fs.selecter.css");
 @import url(http://fonts.googleapis.com/css?family=Open+Sans+Condensed:300,700);
 @import url(http://fonts.googleapis.com/css?family=Roboto:100,200,300,400,500,700|Roboto+Condensed:300,400,700);
 @media (min-width: 1024px) {
@@ -722,7 +721,7 @@ body {
 
 .intro {
     width: 100%;
-    background: url(assets/images/bg3.jpg);
+    background: url(../images/bg3.jpg);
     background-position: center top;
     background-repeat: no-repeat;
     background-size: cover;
@@ -994,7 +993,7 @@ button.btn-search {
 }
 
 .cat-list.arrow li {
-    background: url("assets/images/arrow-right.png") no-repeat scroll left center rgba(0, 0, 0, 0);
+    background: url("images/arrow-right.png") no-repeat scroll left center rgba(0, 0, 0, 0);
     border-bottom: 1px dotted #ddd;
     padding: 5px 14px;
 }

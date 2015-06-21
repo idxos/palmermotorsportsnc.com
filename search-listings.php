@@ -6,7 +6,9 @@
 <?php include('global_embeds/headicons.php'); ?>
 <meta author="Christopher J. Roberts">
 <meta description="Palmer Motorsports Your #1 Source for Motor Cycles, Dirt Bikes, UtVs, ATVs, SeaDoos, and Huskavarna Lawn and Garden Equipment and repair.">
-<link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap.min.css" rel="stylesheet">
+    
+
+    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap.min.css" rel="stylesheet">
 
     <link href="assets/css/fileinput.css" media="all" rel="stylesheet" type="text/css" />
 
@@ -15,6 +17,10 @@
     <script src="assets/js/fileinput_locale_fr.js" type="text/javascript"></script>
     <script src="assets/js/fileinput_locale_es.js" type="text/javascript"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/js/bootstrap.min.js" type="text/javascript"></script>
+
+    <link href="assets/css/core.css" rel="stylesheet">
+    <link href="assets/css/checkbox.css" rel="stylesheet">
+    <link href="assets/css/scrollbar.css" rel="stylesheet">
 
     <link href="assets/css/style.css" rel="stylesheet">
     <link href="assets/css/owl.theme.css" rel="stylesheet">
@@ -51,22 +57,44 @@
     </div><!--/.main-container-->
 
             
+<a href="http://palmermotorsportsnc.com/assets/palmer-data/downloads-items_by_vendor-json-item-vendor_id=FLY+RACING.json">Link to FLY-RACING.json data</a>
+<br/>
 
 
     <?php include('global_embeds/footer.php'); ?>
-    <a href="http://palmermotorsportsnc.com/assets/palmer-data/downloads-items_by_vendor-json-item-vendor_id=FLY+RACING.json">Link to FLY-RACING.json data</a>
+
+    
+
 </div><!-- #wrapper -->
-<script src="assets/js/app.js"></script>
-<script src="assets/js/form-validation.js"></script>
-<script src="assets/js/jquery.matchHeight-min.js"></script>
-<script src="assets/js/hideMaxListItem.js"></script>
-<script src="assets/js/jquery.fs.scroller.js"></script>
-<script src="assets/js/jquery.fs.selecter.js"></script>
-<script src="assets/js/jquery.parallax-1.1.js"></script>
-<script src="assets/js/form-validation.js"></script>
-<script src="assets/js/jquery.scrollto.js"></script>
-<script src="assets/js/adsdetails.js"></script>
-<script src="assets/js/fileinput.min.js"></script>
-<script src="assets/js/script.js"></script>
+<script src="assets/js/app.js" type="text/javascript"></script>
+<script src="assets/js/form-validation.js" type="text/javascript"></script>
+<script src="assets/js/jquery.easing.1.3.js" type="text/javascript"></script>
+<script src="assets/js/jquery.matchHeight-min.js" type="text/javascript"></script>
+<script src="assets/js/hideMaxListItem.js" type="text/javascript"></script>
+<script src="assets/js/jquery.fs.scroller.js" type="text/javascript"></script>
+<script src="assets/js/jquery.fs.selecter.js" type="text/javascript"></script>
+<script src="assets/js/jquery.parallax-1.1.js" type="text/javascript"></script>
+<script src="assets/js/form-validation.js" type="text/javascript"></script>
+<script src="assets/js/jquery.scrollto.js" type="text/javascript"></script>
+<script src="assets/js/adsdetails.js" type="text/javascript"></script>
+<script src="assets/js/fileinput.min.js" type="text/javascript"></script>
+<script src="assets/js/script.js" type="text/javascript"></script>
+
+<script src="assets/js/core.js" type="text/javascript"></script>
+<script src="assets/js/touch.js" type="text/javascript"></script>
+<script src="assets/js/checkbox.js" type="text/javascript"></script>
+<script src="assets/js/scrollbar.js" type="text/javascript"></script>
+
+<script type="text/javascript">
+    $("input[type=radio]").checkbox();
+    
+    $("input[type=checkbox]").checkbox({
+        toggle: true
+    });
+    
+    $(".target").scrollbar({
+        horizontal: true
+    });
+</script>
 </body>
 </html>

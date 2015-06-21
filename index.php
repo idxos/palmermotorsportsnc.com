@@ -3,26 +3,34 @@
  <head>
 <meta charset="utf-8">
 <title>Palmer Motorsports - Account</title>
-{embed='global_embeds/.head-icons'}
+<?php include('global_embeds/headicons.php'); ?>
 <meta author="Christopher J. Roberts">
 <meta description="Palmer Motorsports Your #1 Source for Motor Cycles, Dirt Bikes, UtVs, ATVs, SeaDoos, and Huskavarna Lawn and Garden Equipment and repair.">
+<link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap.min.css" rel="stylesheet">
+<link href="//netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.min.css" rel="stylesheet" type="text/css" media="all">
 
-    <link rel="stylesheet" type="text/css" media="all" href="//netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.min.css">
-    <link rel="stylesheet" type="text/css" media="all" href="//netdna.bootstrapcdn.com/bootstrap/3.1.0/css/bootstrap.min.css">
+    <link href="assets/css/fileinput.css" media="all" rel="stylesheet" type="text/css" />
 
-    <link href="{site_url}assets/css/style.css" rel="stylesheet">
-    <link href="{site_url}assets/classifieds-theme/css/owl.carousel.css" rel="stylesheet">
-    <link href="{site_url}assets/classifieds-theme/css/owl.theme.css" rel="stylesheet">
-    <link href="{site_url}assets/classifieds-theme/css/palmer-theme-styles.css" rel="stylesheet">
-    <style>
-    </style>
-    <style type="text/css">.cf-hidden { display: none; } .cf-invisible { visibility: hidden; }</style>
-    <script src="{site_url}assets/javascript/pace.min.js"></script>
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+    <script src="assets/js/fileinput.min.js" type="text/javascript"></script>
+    <script src="assets/js/fileinput_locale_fr.js" type="text/javascript"></script>
+    <script src="assets/js/fileinput_locale_es.js" type="text/javascript"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/js/bootstrap.min.js" type="text/javascript"></script>
+
+    <link href="assets/css/style.css" rel="stylesheet">
+    <link href="assets/css/owl.theme.css" rel="stylesheet">
+    <link href="assets/css/palmer-theme-styles.css" rel="stylesheet">
+    <link href="assets/assets/css/animation.css" rel="stylesheet">
+
+    <link href="assets/assets/css/palmer-sass-styles.css" rel="stylesheet">
+
+<style>
+</style>
 </head>
 <body>
 <div id="wrapper">
-    {embed='global_embeds/.top-nav-white'}
-
+    
+<?php include('global_embeds/top-nav-white.php'); ?>
 
 
     <div class="main-container">
@@ -47,22 +55,17 @@
             
 
 
-    {embed='global_embeds/.footer'}
+    <?php include('global_embeds/footer.php'); ?>
 </div><!-- #wrapper -->
-<script src="//ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
-<script>window.jQuery || document.write('<script src="js/jquery-1.10.2.min.js"><\/script>')</script>
-<script src="//netdna.bootstrapcdn.com/bootstrap/3.1.0/js/bootstrap.min.js"></script>
-<script src="{site_url}assets/javascript/owl.carousel.min.js"></script>
-<script src="{site_url}assets/javascript/form-validation.js"></script>
-<script src="{site_url}assets/javascript/jquery.matchHeight-min.js"></script>
-<script src="{site_url}assets/javascript/hideMaxListItem.js"></script>
-<script src="{site_url}assets/javascript/jquery.fs.scroller.js"></script>
-<script src="{site_url}assets/javascript/jquery.fs.selecter.js"></script>
-<script src="{site_url}assets/javascript/jquery.parallax-1.1.js"></script>
-<script src="{site_url}assets/javascript/form-validation.js"></script>
-<script src="{site_url}assets/javascript/adsdetails.js"></script>
-<script src="{site_url}assets/javascript/jquery.scrollto.js"></script>
-<script src="{site_url}assets/javascript/script.js"></script>
-</body>
-</html>
 
+<script src="assets/javascript/form-validation.js"></script>
+<script src="assets/javascript/jquery.matchHeight-min.js"></script>
+<script src="assets/javascript/hideMaxListItem.js"></script>
+<script src="assets/javascript/jquery.fs.scroller.js"></script>
+<script src="assets/javascript/jquery.fs.selecter.js"></script>
+<script src="assets/javascript/jquery.parallax-1.1.js"></script>
+<script src="assets/javascript/form-validation.js"></script>
+<script src="assets/javascript/jquery.scrollto.js"></script>
+<script src="assets/javascript/adsdetails.js"></script>
+<script src="assets/javascript/fileinput.min.js"></script>
+<script src="assets/javascript/script.js"></script>

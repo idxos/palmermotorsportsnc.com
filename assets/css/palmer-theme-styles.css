@@ -41,15 +41,15 @@ a:focus {
 .btn-primary-dark:active,
 .btn-primary-dark.active,
 .open .dropdown-toggle.btn-primary-dark {
-    background-color: #0c3887;
-    border-color: #0c3887;
+    background-color: #18489d;
+    border-color: #18489d;
     color: #FFFFFF;
 }
 
 .btn-primary-dark {
-    background-color: #133879;
-    border-color: #133879;
-    color: #fff;
+    background-color: #18489d;
+    border-color: #18489d;
+    color: #000;
 }
 
 .ln-shadow {
@@ -88,7 +88,7 @@ a:focus {
 
 .btn-danger {
   color: #000000;
-  background-color: #fef200;
-  border-color: #fef200;
+  background-color: #18489d;
+  border-color: #18489d;
   font-size: 24px;
 }

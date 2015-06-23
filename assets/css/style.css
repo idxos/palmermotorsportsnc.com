@@ -1,4 +1,5 @@
 @import url("font-awesome.css");
+@import url("Dekaranger3DItalic.css");
 @import url("fontello.css");
 @import url("longshadow.css");
 @import url("jquery.fs.scroller.css");
@@ -37,7 +38,6 @@ ol {
 body {
     margin: 0;
     padding: 0;
-    color: #34495E;
     color: #333;
     font-family: 'Roboto', sans-serif;
     font-size: 13px;
@@ -48,7 +48,6 @@ body {
 body,
 html,
 #wrapper {
-    height: 100%;
     width: 100%;
 }
 
@@ -163,12 +162,13 @@ hr.small {
 }
 
 .form-control:focus {
-    border-color: #16a085;
-    box-shadow: 0 1px 0 #16a085, 0 -1px 0 #16a085, -1px 0 0 #16a085, 1px 0 0 #16a085;
-    -webkit-box-shadow: 0 1px 0 #16a085, 0 -1px 0 #16a085, -1px 0 0 #16a085, 1px 0 0 #16a085;
-    -moz--box-shadow: 0 1px 0 #16a085, 0 -1px 0 #16a085, -1px 0 0 #16a085, 1px 0 0 #16a085;
+    border-color: #0177c1;
+    box-shadow: 0 1px 0 #0177c1, 0 -1px 0 #0177c1, -1px 0 0 #0177c1, 1px 0 0 #0177c1;
+    -webkit-box-shadow: 0 1px 0 #0177c1, 0 -1px 0 #0177c1, -1px 0 0 #0177c1, 1px 0 0 #0177c1
+    -moz--box-shadow: 0 1px 0 #0177c1, 0 -1px 0 #0177c1, -1px 0 0 #0177c1, 1px 0 0 #0177c1;
     outline: 0 none;
 }
+
 
 form input[type="text"],
 form input[type="email"],
@@ -295,15 +295,15 @@ fieldset[disabled] .btn-default.active {
 .btn-primary:active,
 .btn-primary.active,
 .open .dropdown-toggle.btn-primary {
-    background-color: #149078;
-    border-color: #149078;
-    color: #FFFFFF;
+    background-color: #18489d;
+    border-color: #113574;
+    color: #000000;
 }
 
 .btn-primary-dark {
     background-color: #028c71;
     border-color: #028c71;
-    color: #fff;
+    color: #000000;
 }
 
 .btn-primary-dark:hover,
@@ -312,8 +312,8 @@ fieldset[disabled] .btn-default.active {
 .btn-primary-dark.active,
 .open .dropdown-toggle.btn-primary-dark {
     background-color: #008166;
-    border-color: #008166;
-    color: #FFFFFF;
+    border-color: #113574;
+    color: #000;
 }
 
 .btn-info {
@@ -396,7 +396,7 @@ fieldset[disabled] .btn-danger.active {
     background-color: #E74C3C;
 }
 
-btn-post:hover,
+.btn-post:hover,
 .btn-post:focus,
 .btn-post:active,
 .btn-post.active,
@@ -449,7 +449,7 @@ fieldset[disabled] .btn-success.active {
 
 .btn-warning {
     background-color: #F1C40F;
-    color: #FFFFFF;
+    color: #000;
 }
 
 .btn-warning:hover,
@@ -459,7 +459,7 @@ fieldset[disabled] .btn-success.active {
 .open .dropdown-toggle.btn-warning {
     background-color: #F5D313;
     border-color: #F5D313;
-    color: #FFFFFF;
+    color: #000;
 }
 
 .btn-warning:active,
@@ -721,7 +721,7 @@ body {
 
 .intro {
     width: 100%;
-    background: url(../images/bg3.jpg);
+    background: url(../../images/uploads/palmer-sliders/palmer-motorsports-front-02.jpg);
     background-position: center top;
     background-repeat: no-repeat;
     background-size: cover;
@@ -993,7 +993,7 @@ button.btn-search {
 }
 
 .cat-list.arrow li {
-    background: url("images/arrow-right.png") no-repeat scroll left center rgba(0, 0, 0, 0);
+    background: url("../images/arrow-right.png") no-repeat scroll left center rgba(0, 0, 0, 0);
     border-bottom: 1px dotted #ddd;
     padding: 5px 14px;
 }
@@ -1411,7 +1411,11 @@ button.btn-search {
 }
 
 .cornerRibbons.topAds {
-  background: #16A085;
+  background: #fef200;
+  color: #000;
+}
+.cornerRibbons.topAds a {
+  color: #000;
 }
 
 .cornerRibbons.urgentAds {
@@ -1419,7 +1423,7 @@ button.btn-search {
 }
 
 .cornerRibbons.featuredAds {
-  background: #FB8D17;
+  background: #0177c1;
 }
 
 .cornerRibbons.featuredAds a {
@@ -1688,7 +1692,6 @@ button.btn-search {
   position: absolute;
   z-index: 2;
 }
-
 
 .list-title.gray:before {
       border-color: transparent transparent transparent;
@@ -2795,13 +2798,13 @@ td.ads-details-td {
 
 .faq-panel .panel-title a::after {
     color: inherit;
-    content: "";
+    content: "\f068";
     float: right;
     font-family: "FontAwesome";
     font-size: 20px;
 }
 .faq-panel .panel-title a.collapsed::after {
-    content: "";
+    content: "\f067";
 }
 
 .faq-panel .panel-heading {

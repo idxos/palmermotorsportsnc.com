@@ -1,5 +1,8 @@
 <div class="inner-box category-content">
-  <h2 class="title-2 uppercase"><strong> <i class="icon-docs"></i> Search Listings</strong> </h2>
+  <h2 class="title-2 uppercase">
+  <embed type="image/svg+xml" class="icon-color-3" src="images/uploads/ion-icons/ios-search.svg" />
+    <strong>Search Listings</strong> 
+  </h2>
   <div class="row">
       <div class="col-sm-12">
           <form class="form-horizontal">

@@ -1,7 +1,6 @@
 <div class="inner-box category-content">
   <h2 class="title-2 uppercase">
-  <embed type="image/svg+xml" class="icon-color-3" src="images/uploads/ion-icons/ios-search.svg" />
-    <strong>Search Listings</strong> 
+    <strong><i class="ion-ios-search-strong"></i> Search Our Products</strong>
   </h2>
   <div class="row">
       <div class="col-sm-12">

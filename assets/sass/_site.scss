@@ -30,7 +30,6 @@ h1.font-palmer {
   }
 }
 
-
 .my-overflow-y {
     white-space: nowrap;
     overflow-y: hidden;
@@ -68,19 +67,15 @@ h5 {
   line-height: 20px;
 }
 
-
 .icon-color-1 {
     color: #FF9113;
 }
-
 .icon-color-2 {
     color: #E6C840;
 }
-
 .icon-color-3 {
     color: #fef200;
 }
-
 .icon-color-3 {
     color: #18489d;
 }
@@ -260,4 +255,55 @@ button.btn-search {
     left: 8px;
     position: absolute;
     top: 16px;
+}
+
+
+
+
+.list-title a, .list-title {
+  color: #222;
+  font-size: 18px;
+}
+
+.list-title {
+  border-bottom: 1px solid #ddd;
+  display: block;
+  margin-bottom: 15px;
+  padding: 10px 0;
+  position: relative;
+  text-transform: uppercase;
+}
+
+.list-title:before {
+  border-color: #ddd transparent transparent;
+  border-style: solid;
+  border-width: 7px;
+  bottom: -14px;
+  box-sizing: border-box;
+  content: " ";
+  display: block;
+  left: 34px;
+  position: absolute;
+  z-index: 2;
+}
+
+.list-title:after {
+  border-color: #fff transparent transparent;
+  border-style: solid;
+  border-width: 6px;
+  bottom: -12px;
+  box-sizing: border-box;
+  content: " ";
+  display: block;
+  left: 35px;
+  position: absolute;
+  z-index: 2;
+}
+
+.list-title.gray:before {
+      border-color: transparent transparent transparent;
+}
+
+.list-title.gray:after {
+      border-color: transparent transparent transparent;
 }

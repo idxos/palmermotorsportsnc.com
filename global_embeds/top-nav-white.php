@@ -4,7 +4,7 @@
             <div class="navbar-header">
                 <button data-target=".navbar-collapse" data-toggle="collapse" class="navbar-toggle" type="button"> <span class="sr-only">Toggle navigation</span> <span class="icon-bar"></span> <span class="icon-bar"></span> <span class="icon-bar"></span> </button>
                 <a href="http://localhost:8888/palmermotorsportsnc.com/home.php" class="navbar-brand logo logo-title">
-                    <span class="logo-icon"><img src="http://palmermotorsportsnc.com/images/uploads/logo-images/palmer-motorsports-logo-top-nav.png" class="img-responsive"></span><span></span>
+                    <span class="logo-icon"><img src="images/uploads/logo-images/palmer-motorsports-logo-top-nav.png" class="img-responsive"></span><span></span>
                 </a>
             </div>
             <div class="navbar-collapse collapse">

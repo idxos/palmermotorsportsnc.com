@@ -6,7 +6,6 @@
 <?php include('global_embeds/headicons.php'); ?>
 <meta author="Christopher J. Roberts">
 <meta description="Palmer Motorsports Your #1 Source for Motor Cycles, Dirt Bikes, UtVs, ATVs, SeaDoos, and Huskavarna Lawn and Garden Equipment and repair.">
-    
 
     <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap.min.css" rel="stylesheet">
 
@@ -27,9 +26,9 @@
     <link href="assets/css/palmer-theme-styles.css" rel="stylesheet">
     <link href="assets/css/animation.css" rel="stylesheet">
 
-
-<style>
-</style>
+    <style type="text/css">.cf-hidden { display: none; } .cf-invisible { visibility: hidden; }</style>
+    <script src="assets/js/pace.min.js"></script>
+    
 </head>
 <body>
 <div id="wrapper">
@@ -41,56 +40,33 @@
         <div class="container">
 
             <div class="row">
-                <div class="col-md-9 page-content">
-                    
-                
-                
 
-                    <div class="inner-box category-content">
-                      <h2 class="title-2 uppercase"><strong> <i class="icon-docs"></i> Search Listings</strong> </h2>
-                      
-                      <div class="row">
-                            <section class="col-sm-12">
-                                
-                            </section>   
-                        </div><!--/.row-->
-
-                        <h2 class="title-2 uppercase"><strong> <i class="icon-docs"></i> Another Section</strong> </h2>
-                        <div class="row">
-                            <section class="col-xs-12">
-                              im empty
-                            </section>
-                        </div>
-                    </div><!-- End of inner-box -->
-
-
-
-
-
-
-
-
-                    <?php include('forms/page-content-search-listings.php'); ?>
-                </div><!--/.col-->
-                <div class="col-md-3 reg-sidebar">
+                <section class="col-md-3 reg-sidebar">
                     <aside>
                         <?php include('forms/page-sidebar-search-listings.php'); ?>
                         <?php include('global_embeds/sidebar-settings-togle.php'); ?>
                     </aside>
-                </div>
+                </section>
+                <section class="col-md-9 page-content col-thin-right">
+
+                    <?php include('forms/page-content-search-listings.php'); ?>
+                    
+                </section><!--/.col-->
                 
             </div><!--/.row-->
+
+            <div class="row">
+                <section class="col-lg-12">
+                    data.json link for item=Fly<br>
+                    /assets/palmer-data/downloads-items_by_vendor-json-item-vendor_id%3DFLY%2BRACING.json
+                </section>
+            </div>
         </div><!--/.container-->
     </div><!--/.main-container-->
 
-            
-<a href="http://palmermotorsportsnc.com/assets/palmer-data/downloads-items_by_vendor-json-item-vendor_id=FLY+RACING.json">Link to FLY-RACING.json data</a>
-<br/>
 
-
+    <?php include('global_embeds/bottom-info.php'); ?>
     <?php include('global_embeds/footer.php'); ?>
-
-    
 
 </div><!-- #wrapper -->
 <script src="assets/js/app.js" type="text/javascript"></script>

@@ -6,14 +6,13 @@
     <?php include('global_embeds/headicons.php'); ?>
     <meta author="Christopher J. Roberts">
     <meta description="Palmer Motorsports Your #1 Source for Motor Cycles, Dirt Bikes, UtVs, ATVs, SeaDoos, and Huskavarna Lawn and Garden Equipment and repair.">
-            <link rel="stylesheet" type="text/css" media="all" href="//netdna.bootstrapcdn.com/bootstrap/3.1.0/css/bootstrap.min.css">
+    
+    <link rel="stylesheet" type="text/css" media="all" href="//netdna.bootstrapcdn.com/bootstrap/3.1.0/css/bootstrap.min.css">
     <link href="assets/css/style.css" rel="stylesheet">
+    
     <link href="assets/css/owl.carousel.css" rel="stylesheet">
     <link href="assets/css/owl.theme.css" rel="stylesheet">
-    
-    
     <link href="assets/css/palmer-sass-styles.css" rel="stylesheet">
-
     <link href="assets/plugins/bxslider/jquery.bxslider.css" rel="stylesheet"/>
 
     <style>

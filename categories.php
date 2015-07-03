@@ -47,7 +47,7 @@
                     </aside>
                 </section>
                 <section class="col-sm-9 page-content col-thin-left">
-
+                
                     <div class="category-list">
 
                         <?php include('forms/category-list.php'); ?>

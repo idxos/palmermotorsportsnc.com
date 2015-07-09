@@ -44,23 +44,18 @@
                 <section class="col-md-3 reg-sidebar">
                     <aside>
                         <?php include('forms/page-sidebar-search-listings.php'); ?>
-                        <?php include('global_embeds/sidebar-settings-togle.php'); ?>
                     </aside>
                 </section>
                 <section class="col-md-9 page-content col-thin-right">
 
                     <?php include('forms/page-content-search-listings.php'); ?>
+
+                    
                     
                 </section><!--/.col-->
                 
             </div><!--/.row-->
 
-            <div class="row">
-                <section class="col-lg-12">
-                    data.json link for item=Fly<br>
-                    /assets/palmer-data/downloads-items_by_vendor-json-item-vendor_id%3DFLY%2BRACING.json
-                </section>
-            </div>
         </div><!--/.container-->
     </div><!--/.main-container-->
 

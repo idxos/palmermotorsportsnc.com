@@ -1,0 +1,18 @@
+<div>
+    
+   <div ng-repeat="product in products | filter:byRange('list_price', filterModelMin.list_price, filterModelMax.list_price)">
+      
+      <table border="1" style="width:200px">
+
+       <tr>
+           <td> <div>Price : {{ formElement.list_price }}</div><br> </td>
+       </tr>
+       <tr>
+           <td> <div>Country : {{ formElement.country_of_origin }}</div><br> </td>
+        </tr>
+        
+       
+    </table>
+        </div>
+</div>
+

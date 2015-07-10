@@ -1,0 +1,13 @@
+
+<form>
+<!--Filter Search starts-->
+ <strong>Filter search by :</strong>
+ 
+ Price Range <input type="number" name="filterPriceMin" ng-model="filterModelMin.list_price" /> to <input type="number" name="filterPriceMax" ng-model="filterModelMax.list_price" /><br><br>
+
+Place <input type="text" name="filterPlace" ng-model="filterModel.country_of_origin"  />
+  
+<!--Filter Search Ends-->
+<button ng-click="onClick()" class="btn btn-primary">Submit</button>
+</form>
+

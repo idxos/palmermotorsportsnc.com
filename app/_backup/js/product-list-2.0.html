@@ -57,7 +57,13 @@
       
       <div class="category-list">
         <div class="tab-box ">
-            <ul class="nav nav-tabs add-tabs" id="ajaxTabs" role="tablist">
+            <ul class="nav nav-tabs add-tabs" ng-controller="TabsCtrl" role="tablist">
+                <tabset>
+                  <tab ng-repeat="tab in tabs" heading="{{tab.title}}" active="tab.active" disable="tab.disabled">
+                    {{tab.content}}
+                  </tab>
+                </tabset>
+
                 <li class="active"><a href="#allAds" data-url="ajax/1.html" role="tab" data-toggle="tab">All Ads <span class="badge">228,705</span></a></li>
                 <li><a href="#businessAds" data-url="ajax/2.html" role="tab" data-toggle="tab">Business <span class="badge">22,805</span></a></li>
                 <li><a href="#personalAds" data-url="ajax/3.html" role="tab" data-toggle="tab">Personal <span class="badge">18,705</span></a></li>

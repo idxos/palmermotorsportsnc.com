@@ -32,13 +32,26 @@
     <meta author="Christopher J. Roberts">
 
     <script src="assets/js/modernizr.js" type="text/javascript"></script>
+
      <!-- Compiled CSS -->
-    <link href="assets/css/core.css" rel="stylesheet">
-    <link href="assets/css/checkbox.css" rel="stylesheet">
+    <link href="assets/css/dropdown.css" rel="stylesheet">
     <link href="assets/css/scrollbar.css" rel="stylesheet">
     <!--[if gt IE 8]><!-->
     <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap.min.css" rel="stylesheet">
     <link href="assets/css/palmer-sass-styles.css" rel="stylesheet">
+    
+    
+    <script type="text/javascript">
+      (function(){
+        var isiPad = navigator.userAgent.match(/iPad/i) != null;
+
+        if(isiPad) {
+          //CHANGE VIEWPORT BACK TO DEFAULT FOR IPAD
+          var viewport = document.getElementById('viewport');
+          viewport.setAttribute('content', 'width=980, user-scalable=yes, minimum-scale=.25, maximum-scale=1.6 ');
+        }
+      })();
+    </script>
 
     <style type="text/css">.cf-hidden { display: none; } .cf-invisible { visibility: hidden; }</style>
     <script src="assets/js/pace.min.js"></script>

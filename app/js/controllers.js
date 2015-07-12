@@ -6,7 +6,6 @@ var productControllers = angular.module('productControllers', []);
 
 
 productControllers.controller('ProductListController', ['$scope', 'Product',
-  
   function($scope, Product) {
     $scope.products = Product.query('description');
     $scope.orderProp = 'list_price';
@@ -19,8 +18,6 @@ productControllers.controller('ProductListController', ['$scope', 'Product',
         return minValue <= item[fieldName] && item[fieldName] <= maxValue;
       };
     };
-
-
   }]);
 
 

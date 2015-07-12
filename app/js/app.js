@@ -4,11 +4,16 @@
 
 
 var myApp = angular.module('myApp', [
+  'ui.bootstrap',                           
   'ngRoute',
   'productAnimations',
   'productControllers',
   'productFilters',
-  'productServices'
+  'productServices',
+  'dropdownControllers',
+  'paginationControllers',
+  'modalControllers',
+  'tabControllers'
 ]);
 
 myApp.config(['$routeProvider',
@@ -23,7 +28,6 @@ myApp.config(['$routeProvider',
         templateUrl: 'partials/product-detail.html',
         controller: 'ProductDetailController'
       }).
-
       when('/dashboard', {
         templateUrl: 'partials/dashboard/dashboard.html',
         controller: 'DashboardCtrl'
@@ -48,8 +52,6 @@ myApp.config(['$routeProvider',
         templateUrl: 'partials/dashboard/daily-processing.html',
         controller: 'DashboardCtrl'
       }).
-
-
       otherwise({
         redirectTo: '/products'
       });

@@ -1,0 +1,43 @@
+<div class="container-fluid">
+  <div class="row">
+    <section class="col-md-2">
+      <!--Sidebar content-->
+
+    <div class="form-group">
+      <label for="query">Search: </label>
+      <input ng-model="query" class="">
+    </div>
+
+
+
+    <div class="form-group">
+      <label for="orderProp">Sort by:</label>
+      <select ng-model="orderProp">
+        <option value="list_price">List Price</option>
+        <option value="create_date">Newest</option>
+      </select>
+    </div>
+
+
+    <div class="form-group">
+      <label for="byRang">Price</label>
+      <input type="number" name="minValue" ng-model="filterModelMin.list_price" /> to 
+      <input type="number" name="maxValue" ng-model="filterModelMax.list_price" />
+    </div>
+
+    </section>
+    <div class="col-md-10">
+      <!--Body content-->
+
+      <ul class="products">
+        <li ng-repeat="product in products | filter:query | orderBy:orderProp | filter:byRange('list_price', filterModelMin.list_price, filterModelMax.list_price)"
+            class="thumbnail product-listing">
+            <img src="http://www.wpsstatic.com/WPSIMAGES/thumbs/{{product.image}}" class="img-responsive">
+          <p>{{product.list_price}}</p>
+          <p>{{product.description}}</p>
+        </li>
+      </ul>
+
+    </div>
+  </div>
+</div>

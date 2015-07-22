@@ -1,0 +1,21 @@
+<div class="listing-filter">
+  <div class="pull-left col-xs-6">
+      <div class="breadcrumb-list" ng-controller="DropdownCtrl">
+        <div class="btn-group" dropdown is-open="status.isopen">
+          <button type="button" class="btn btn-default btn-xs dropdown-toggle" dropdown-toggle ng-disabled="disabled"> For Sale <span class="caret"></span>
+          </button>
+          <ul class="dropdown-menu" role="menu">
+            <li ng-repeat="choice in items">
+              <a href>{{choice}}</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+  </div>
+  <div class="pull-right col-xs-6 text-right listing-view-action"> 
+      <span class="list-view active"><i class="fa fa-th-list"></i></span> 
+      <span class="compact-view"><i class="fa fa-list"></i></span>
+      <span class="grid-view "><i class="fa fa-th-large"></i></span>
+  </div>
+  <div style="clear:both"></div>
+</div><!--/.listing-filter-->

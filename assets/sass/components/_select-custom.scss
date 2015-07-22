@@ -1,0 +1,256 @@
+/* 
+ * selectpicker v3.2.4 - 2015-04-04 
+ * A jQuery plugin for replacing default select elements. Part of the Formstone Library. 
+ * http://classic.formstone.it/selectpicker/ 
+ * 
+ * Copyright 2015 Ben Plum; MIT Licensed 
+ */
+
+
+.selectpicker {
+  position: relative;
+  display: block;
+  margin: 10px 0;
+  z-index: 1;
+  max-width: 30%;
+}
+.selectpicker:focus {
+  box-shadow: none;
+  outline: none;
+}
+.selectpicker,
+.selectpicker * {
+  -webkit-user-select: none !important;
+     -moz-user-select: none !important;
+      -ms-user-select: none !important;
+          user-select: none !important;
+}
+.selectpicker,
+.selectpicker *,
+.selectpicker *:before,
+.selectpicker *:after {
+  box-sizing: border-box;
+}
+.selectpicker-element {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  left: 0;
+  opacity: 0;
+  z-index: -1;
+}
+.selectpicker-element,
+.selectpicker-element:focus {
+  outline: none;
+  -webkit-tap-highlight-color: rgba(255, 255, 255, 0);
+  -webkit-tap-highlight-color: transparent;
+}
+.no-opacity .selectpicker-element {
+  left: -999999px;
+}
+.selectpicker-selected {
+  position: relative;
+  background: #ffffff;
+  border: 1px solid #cccccc;
+  color: #222222;
+  cursor: pointer;
+  display: block;
+  font-size: 13px;
+  margin: 0;
+  overflow: hidden;
+  padding: 10px 15px;
+  text-overflow: clip;
+  z-index: 2;
+  border-radius: 3px;
+}
+.selectpicker-selected:after {
+  height: 0;
+  width: 0;
+  position: absolute;
+  top: 0;
+  right: 15px;
+  bottom: 0;
+  border-left: 5px solid transparent;
+  border-right: 5px solid transparent;
+  border-top: 5px solid #cccccc;
+  content: '';
+  display: block;
+  margin: auto 0;
+}
+.no-touch .selectpicker-selected:hover {
+  color: #333333;
+}
+.no-touch .selectpicker.disabled .selectpicker-selected:hover {
+  color: #cccccc;
+}
+.selectpicker-options {
+  width: 100%;
+  max-height: 260px;
+  position: absolute;
+  top: 100%;
+  left: 0;
+  border: 1px solid #cccccc;
+  border-width: 0 1px 1px;
+  background-color: #ffffff;
+  display: none;
+  margin: 0;
+  overflow: auto;
+  overflow-x: hidden;
+  padding: 0;
+  z-index: 50;
+  border-radius: 0 0 3px 3px;
+  box-shadow: 0 1px 4px rgba(0, 0, 0, 0.15);
+}
+.selectpicker-options.scroller {
+  position: absolute;
+}
+.no-opacity .selectpicker-options {
+  width: auto;
+}
+.selectpicker-group {
+  border-bottom: 1px solid #cccccc;
+  color: #999999;
+  display: block;
+  font-size: 11px;
+  padding: 10px 15px;
+  text-transform: uppercase;
+}
+.selectpicker-item {
+  width: 100%;
+  background: #ffffff;
+  border-bottom: 1px solid #cccccc;
+  color: #222222;
+  cursor: pointer;
+  display: block;
+  font-size: 13px;
+  margin: 0;
+  overflow: hidden;
+  padding: 10px 15px;
+  text-decoration: none;
+  text-overflow: ellipsis;
+}
+.selectpicker-item.placeholder {
+  display: none;
+}
+.selectpicker-item.selected {
+  background: #eeeeee;
+}
+.selectpicker-item.disabled {
+  color: #999999;
+  cursor: default;
+}
+.selectpicker-item:first-child {
+  border-radius: 0;
+}
+.selectpicker-item:last-child {
+  border-bottom: 0;
+  border-radius: 0 0 2px 2px;
+}
+.no-touch .selectpicker-item:hover,
+.no-touch .selectpicker-item.selected:hover {
+  color: #333333;
+  background-color: #cccccc;
+}
+.selectpicker-item.disabled,
+.no-touch .selectpicker-item.disabled:hover {
+  color: #cccccc;
+  background-color: #ffffff;
+}
+.selectpicker.open {
+  z-index: 3;
+}
+.selectpicker.open .selectpicker-selected {
+  z-index: 51;
+  border-radius: 3px 3px 0 0;
+}
+.selectpicker.open .selectpicker-selected,
+.selectpicker.focus .selectpicker-selected {
+  background-color: #ffffff;
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+}
+.selectpicker.cover .selectpicker-options {
+  border-width: 1px;
+  top: 0;
+  border-radius: 3px;
+}
+.selectpicker.cover .selectpicker-options .selectpicker-item.first {
+  border-radius: 3px 3px 0 0;
+}
+.selectpicker.cover.open .selectpicker-selected {
+  z-index: 49;
+  border-radius: 3px 3px 0 0;
+}
+.selectpicker.bottom .selectpicker-options {
+  top: auto;
+  bottom: 100%;
+  border-width: 1px 1px 0;
+}
+.selectpicker.bottom .selectpicker-item:last-child {
+  border: none;
+}
+.selectpicker.bottom.open .selectpicker-selected {
+  border-radius: 0 0 3px 3px;
+}
+.selectpicker.bottom.open .selectpicker-options {
+  border-radius: 3px 3px 0 0;
+}
+.selectpicker.bottom .cover .selectpicker-options {
+  top: auto;
+  bottom: 0;
+}
+.selectpicker.bottom .cover.open .selectpicker-selected {
+  border-radius: 3px;
+}
+.selectpicker.bottom .cover.open .selectpicker-options {
+  border-radius: 3px;
+}
+.selectpicker.multiple .selectpicker-options {
+  width: 100%;
+  position: static;
+  border-width: 1px;
+  display: block;
+  border-radius: 3px;
+  box-shadow: none;
+}
+.selectpicker.disabled .selectpicker-selected {
+  background: #ffffff;
+  border-color: #cccccc;
+  color: #cccccc;
+  cursor: default;
+}
+.selectpicker.disabled .selectpicker-options {
+  background: #ffffff;
+  border-color: #cccccc;
+}
+.selectpicker.disabled .selectpicker-group,
+.selectpicker.disabled .selectpicker-item {
+  border-color: #cccccc;
+  color: #cccccc;
+  cursor: default;
+}
+.selectpicker.disabled .selectpicker-item.selected,
+.no-touch .selectpicker.disabled .selectpicker-item.selected:hover {
+  background: #fafafa;
+}
+.selectpicker.disabled .selectpicker-item,
+.no-touch .selectpicker.disabled .selectpicker-item:hover {
+  color: #cccccc;
+  background-color: #ffffff;
+}
+.selectpicker-options.scroller {
+  overflow: hidden;
+}
+.selectpicker-options.scroller .scroller-content {
+  max-height: 260px;
+  padding: 0;
+}
+@media screen and (max-width: 740px) {
+  .selectpicker {
+    max-width: 40%;
+  }
+}
+@media screen and (max-width: 500px) {
+  .selectpicker {
+    max-width: 100%;
+  }
+}

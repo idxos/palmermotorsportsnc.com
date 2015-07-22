@@ -3,18 +3,11 @@
 @import 'ionicons/ionicons';
 @import 'partials/theme';
 @import 'animate/animate';
-
-@import url('font-awesome.css');
-@import url('Dekaranger3DItalic.css');
-@import url('fontello-codes.css');
-@import url('fontello.css');
-@import url('longshadow.css');
-@import url('skin-1.css');
-@import url('jquery.fs.scroller.css');
-@import url('jquery.fs.selecter.css');
-@import url('icheck/polaris/polaris.css');
-
-@import 'components/mail';
+@import 'components/pagination';
+@import 'components/select-custom';
+@import 'partials/chris-icons';
+@import 'partials/chris-animation-styles';
+@import 'partials/palmer';
 
 
 body{margin-top:50px;}
@@ -215,114 +208,6 @@ h5 {
 .icon-color-3 {
     color: #18489d;
 }
-
-.size-5 {
-  font-size: 5px;
-}
-.size-10 {
-  font-size: 10px;
-}
-.size-20 {
-  font-size: 20px;
-}
-.size-30 {
-  font-size: 30px;
-}
-.size-40 {
-  font-size: 40px;
-}
-.size-50 {
-  font-size: 50px;
-}
-.size-60 {
-  font-size: 60px;
-}
-.size-70 {
-  font-size: 70px;
-}
-.size-80 {
-  font-size: 80px;
-}
-.size-90 {
-  font-size: 90px;
-}
-.size-100 {
-  font-size: 100px;
-}
-
-.size-96 {
-  font-size: 96px;
-}
-
-
-// Animation Classes
-.shake {
-  @include shake();
-}
-
-.fadeIn {
-  @include fadeIn();
-}
-
-.bounceIn {
-  @include bounceIn();
-}
-
-.bounceInUp {
-  @include bounceInUp();
-}
-
-.bounceInDown {
-  @include bounceInDown();
-}
-
-.bounceInLeft {
-  @include bounceInLeft();
-}
-
-.bounceInRight {
-  @include bounceInRight();
-}
-
-.rotateIn {
-  @include rotateIn();
-}
-
-.fadeInUp {
-  @include fadeInUp();
-}
-
-.fadeInUpBig {
-  @include fadeInUpBig();
-}
-
-.fadeInDown {
-  @include fadeInDown();
-}
-
-.fadeInDownBig {
-  @include fadeInDownBig();
-}
-
-.fadeInLeft {
-  @include fadeInLeft();
-}
-
-.fadeInLeftBig {
-  @include fadeInLeftBig();
-}
-
-.fadeInRight {
-  @include fadeInRight();
-}
-
-.fadeInRightBig {
-  @include fadeInRightBig();
-}
-
-
-
-
 
 .cat-list h3 a,
 .cat-list h3 {

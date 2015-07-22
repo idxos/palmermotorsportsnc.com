@@ -7,7 +7,7 @@ var productControllers = angular.module('productControllers', []);
 
 productControllers.controller('ProductListController', ['$scope', 'Product',
   function($scope, Product) {
-    $scope.products = Product.query('description');
+    $scope.products = Product.query('');
     $scope.orderProp = 'list_price';
 
     $scope.byRange = function(fieldName, minValue, maxValue) {
@@ -15,7 +15,7 @@ productControllers.controller('ProductListController', ['$scope', 'Product',
       if (maxValue === undefined) maxValue = '500';
       
       return function predicateFunc(item) {
-        return minValue <= item[fieldName] && item[fieldName] <= maxValue;
+        return minValue <= product[fieldName] && product[fieldName] <= maxValue;
       };
     };
   }]);
@@ -31,3 +31,7 @@ productControllers.controller('ProductDetailController', ['$scope', '$routeParam
       $scope.mainImageUrl = imageUrl;
     };
   }]);
+
+
+
+

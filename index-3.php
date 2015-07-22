@@ -34,14 +34,13 @@
     <script src="assets/js/modernizr.js" type="text/javascript"></script>
 
      <!-- Compiled CSS -->
-    <link href="assets/css/core.css" rel="stylesheet">
+
     <link href="assets/css/checkbox.css" rel="stylesheet">
     <link href="assets/css/scrollbar.css" rel="stylesheet">
     <!--[if gt IE 8]><!-->
     <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap.min.css" rel="stylesheet">
     <link href="assets/css/palmer-sass-styles.css" rel="stylesheet">
-    <link href="assets/css/core.css" rel="stylesheet">
-    
+
     <style type="text/css">.cf-hidden { display: none; } .cf-invisible { visibility: hidden; }</style>
     <script src="assets/js/pace.min.js"></script>
 </head>
@@ -63,7 +62,7 @@
                 <!-- Menu -->
                 <div class="side-menu">
                 
-                    <nav class="navbar navbar-default" role="navigation">
+                    <nav class="navbar navbar-inverse" role="navigation">
                         <!-- Brand and toggle get grouped for better mobile display -->
                         <div class="navbar-header">
                             <div class="brand-wrapper">

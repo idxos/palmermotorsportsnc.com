@@ -1,0 +1,65 @@
+
+// Animation Classes
+.shake {
+  @include shake();
+}
+
+.fadeIn {
+  @include fadeIn();
+}
+
+.bounceIn {
+  @include bounceIn();
+}
+
+.bounceInUp {
+  @include bounceInUp();
+}
+
+.bounceInDown {
+  @include bounceInDown();
+}
+
+.bounceInLeft {
+  @include bounceInLeft();
+}
+
+.bounceInRight {
+  @include bounceInRight();
+}
+
+.rotateIn {
+  @include rotateIn();
+}
+
+.fadeInUp {
+  @include fadeInUp();
+}
+
+.fadeInUpBig {
+  @include fadeInUpBig();
+}
+
+.fadeInDown {
+  @include fadeInDown();
+}
+
+.fadeInDownBig {
+  @include fadeInDownBig();
+}
+
+.fadeInLeft {
+  @include fadeInLeft();
+}
+
+.fadeInLeftBig {
+  @include fadeInLeftBig();
+}
+
+.fadeInRight {
+  @include fadeInRight();
+}
+
+.fadeInRightBig {
+  @include fadeInRightBig();
+}

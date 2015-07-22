@@ -6,20 +6,31 @@
 var myApp = angular.module('myApp', [
   'ui.bootstrap',                           
   'ngRoute',
+  'ngResource',
   'productAnimations',
   'productControllers',
+//  'ItemAnimations',
+//  'ItemControllers'
+ // 'ItemFilters',
+ // 'ItemServices' 
   'productFilters',
   'productServices',
   'dropdownControllers',
   'paginationControllers',
   'modalControllers',
+  'dashboardControllers',
   'tabControllers'
 ]);
+
+
 
 myApp.config(['$routeProvider',
   function($routeProvider) {
     $routeProvider.
-
+      when('/', {
+        templateUrl: 'partials/product-list.html',
+        controller: 'ProductListController'
+      }).
       when('/products', {
         templateUrl: 'partials/product-list.html',
         controller: 'ProductListController'
@@ -28,32 +39,9 @@ myApp.config(['$routeProvider',
         templateUrl: 'partials/product-detail.html',
         controller: 'ProductDetailController'
       }).
-      when('/dashboard', {
-        templateUrl: 'partials/dashboard/dashboard.html',
-        controller: 'DashboardCtrl'
-      }).
-      when('/aaf', {
-        templateUrl: 'partials/dashboard/aaf.html',
-        controller: 'DashboardCtrl'
-      }).
-      when('/operations', {
-        templateUrl: 'partials/dashboard/operations.html',
-        controller: 'DashboardCtrl'
-      }).
-      when('/reports', {
-        templateUrl: 'partials/dashboard/reports.html',
-        controller: 'DashboardCtrl'
-      }).
-      when('/daily-processing', {
-        templateUrl: 'partials/dashboard/daily-processing.html',
-        controller: 'DashboardCtrl'
-      }).
-      when('/rules', {
-        templateUrl: 'partials/dashboard/daily-processing.html',
-        controller: 'DashboardCtrl'
-      }).
-      otherwise({
-        redirectTo: '/products'
-      });
+      when('/', {
+        templateUrl: 'partials/dashboard-list.html',
+        controller: 'DashboardController'
+      })
   }]);
 

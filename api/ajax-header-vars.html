@@ -1,0 +1,16 @@
+
+
+var settings = {
+  "async": true,
+  "crossDomain": true,
+  "url": "http://api.wpswebservices.com/item",
+  "method": "GET",
+  "headers": {
+    "authorization": "Basic RDIwNjA0MDg6MDAwMTEw",
+    "accept": "application/vnd.wps_api.v3+json"
+  }
+}
+
+$.ajax(settings).done(function (response) {
+  console.log(response);
+});

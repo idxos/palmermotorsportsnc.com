@@ -1,0 +1,18 @@
+{
+  "id": "01-3001",
+  "name": "CY-CHRM ASST. TRAY \"2\"",
+  "status": "DROP",
+  "warehouse_stock_levels": {
+    "boise_id": "2",
+    "fresno_ca": "2",
+    "memphis_tn": "2",
+    "elizabethtown_pa": "0",
+    "ashley_in": "0"
+  },
+  "total_stock": "6",
+  "_links": {
+    "self": {
+      "href": "http:\\/\\/api.wpswebservices.com\\/item_inventory\\/01-3001"
+    }
+  }
+}

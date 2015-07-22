@@ -1,0 +1,172 @@
+{absolute_results}
+
+{total_results}
+{absolute_count}
+
+{title_permalink="channel/archives"}
+
+{if summary}
+    The summary is not empty!
+{/if}
+
+
+{if category_request} content {/if}
+
+{if no_results}  <p>There are no entries available.</p>  {/if}
+
+{if not_category_request} content {/if}
+
+
+
+
+{if photo}{absolute_count}{/if}
+
+
+
+
+{categories show="4|7"}
+
+
+{categories}
+        {category_image}
+        <a href="{path='channel/index'}">{category_name}</a>
+{/categories}
+
+bounceInLeft
+
+{category_name}
+
+
+ {if category_request}
+   <div class="row">
+      <section class="col-xs-3">
+          {exp:channel:entries channel='products' limit='10' orderby='title' sort='desc' paginate='bottom' paginate_base='products/index'}
+            <div class="item-list">
+                <div class="col-sm-2 no-padding photobox">
+                    <div class="add-image bounceInLeft"><span class="photo-count"><i class="ion-ios-camera"></i> {product_images limit="1"}{absolute_count}{/product_images} </span>
+                        <a href="{title_permalink='products/details'}">
+                            <img class="thumbnail no-margin" src="{product_image_thumb}" alt="Photo of {title}">
+                        </a>
+                    </div>
+                </div>
+                <div class="col-sm-7 add-desc-box">
+                    <div class="add-details">
+                        <h5 class="add-title"> 
+                            <a href="{title_permalink='products/details'}">{title}</a>
+                        </h5>
+                        <span class="info-row"> <span class="add-type business-ads tooltipHere" data-toggle="tooltip" data-placement="right" title="{title}" data-original-title="{title}">B </span>
+
+                        <span class="date"><i class="ion-ios-calendar-outline"></i>
+                        {exp:channel:month_links channel="products" limit="1"}{month}{/exp:channel:month_links} {exp:channel:month_links channel="products" limit="1"}{day}{/exp:channel:month_links}, {exp:channel:month_links channel="products" limit="1"}{year}{/exp:channel:month_links}
+                        </span> - <span class="category">{product_type} </span>- <span class="item-location"><i class="ion-ios-location"></i> Charlotte, NC </span></span>
+                    </div>
+                </div>
+                <div class="col-sm-3 text-right price-box">
+                    <h2 class="item-price"> $ {product_price}</h2>
+                    <a class="btn btn-default btn-sm make-favorite" data-toggle="modal" data-target="#saveAsFave"> <i class="ion-ios-heart"></i> <span>Save</span> </a>
+                </div>
+            </div>
+         {paginate}
+          <div class="pagination-bar text-center">
+         {pagination_links page_padding="2"}
+            <ul class="pagination">
+              {previous_page}
+              <li {if current_page}class="active"{/if}><a href="{pagination_url}" class="page-previous">Last</a></li>
+              {/previous_page}
+              {page}
+              <li {if current_page}class="active"{/if}><a href="{pagination_url}" class="page-{pagination_page_number}">{pagination_page_number}</a></li>
+              {/page}
+              {next_page}
+              <li><a href="{pagination_url}" class="page-next">Next »</a></li>
+              {/next_page}
+            </ul>
+          {/pagination_links}
+            </div>
+         {/paginate}
+        {/exp:channel:entries}
+      </section>
+  </div>
+{/if}
+
+
+
+
+
+{exp:search:search_results}
+  <div class="item-list">
+     <div class="col-sm-2 no-padding photobox">
+         <div class="add-image bounceInLeft"><span class="photo-count"><i class="ion-ios-camera"></i> 2 </span>
+             <a href="{title_permalink='products/details'}">
+                 <img class="thumbnail no-margin" src="{product_image_thumb}" alt="Photo of {title}">
+             </a>
+         </div>
+     </div>
+     <div class="col-sm-7 add-desc-box">
+         <div class="add-details">
+             <h5 class="add-title">
+                 <a href="{title_permalink='products/details'}">{title}</a>
+             </h5>
+             <span class="info-row"> <span class="add-type business-ads tooltipHere" data-toggle="tooltip" data-placement="right" title="" data-original-title="{title}">B </span>
+
+             <span class="date"><i class="ion-ios-calendar-outline"></i>
+             {exp:channel:month_links channel="products" limit="1"}{month}{/exp:channel:month_links} {exp:channel:month_links channel="products" limit="1"}{day}{/exp:channel:month_links}, {exp:channel:month_links channel="products" limit="1"}{year}{/exp:channel:month_links}
+             </span> - <span class="category">{product_type} </span>- <span class="item-location"><i class="ion-ios-location"></i> Charlotte, NC </span></span>
+         </div>
+     </div>
+     <div class="col-sm-3 text-right price-box">
+         <h2 class="item-price"> $ {product_price}</h2>
+         <a class="btn btn-default btn-sm make-favorite" data-toggle="modal" data-target="#saveAsFave"> <i class="ion-ios-heart"></i> <span>Save</span> </a>
+     </div>
+  </div>
+{/exp:search:search_results}
+
+
+
+
+
+
+
+
+
+
+
+paginate="bottom"
+
+{if current_page}class="active"{/if}
+
+<div class="pagination-bar text-center">
+  {paginate}
+    {pagination_links}
+      <ul class="pagination">
+
+        {first_page}
+          <li class="{if current_page}active{/if}"><a href="{pagination_url}" class="page-first">1</a></li>
+        {/first_page}
+
+        {page}
+          <li class="{if current_page}active{/if}"><a href="{pagination_url}" class="page-{pagination_page_number} {if current_page}active{/if}">{pagination_page_number}</a></li>
+        {/page}
+
+        {next_page}
+          <li class="{if current_page}active{/if}"><a href="{pagination_url}" class="pagination-btn page-next">Next »</a></li>
+        {/next_page}
+
+      </ul>
+    {/pagination_links}
+  {/paginate}
+</div>
+
+
+
+
+                    <div class="pagination-bar text-center">
+                        <ul class="pagination">
+                            <li class="active"><a href="#">1</a></li>
+                            <li><a href="#">2</a></li>
+                            <li><a href="#">3</a></li>
+                            <li><a href="#">4</a></li>
+                            <li><a href="#">5</a></li>
+                            <li><a href="#"> ...</a></li>
+                            <li><a class="pagination-btn" href="#">Next »</a></li>
+                        </ul>
+                    </div><!-- End pagination -->

@@ -16,7 +16,7 @@ paginationControllers.controller('PaginationCtrl', function ($scope, $log) {
     $log.log('Page changed to: ' + $scope.currentPage);
   };
 
-  $scope.maxSize = 5;
+  $scope.maxSize = 25;
   $scope.bigTotalItems = 175;
   $scope.bigCurrentPage = 1;
 });

@@ -1,17 +1,17 @@
 <div class="container-fluid">
   <div class="row">
-    <section class="col-md-3 page-sidebar">
+    <section class="col-md-3 hidden-xs hidden-smpage-sidebar">
       <aside>
         <!--Sidebar content-->
         <div class="inner-box">
 
           <div class="categories-list list-filter">
-            <form role="form" class="form">
+            
               <div class="form-group col-sm-12 no-padding">
                 <label for="query">Search: </label>
                 <input ng-model="query" class="form-control">
               </div>
-            </form>
+            
           </div>
 
 
@@ -33,7 +33,7 @@
 
           <div class="locations-list list-filter">
             <h5 class="list-title"><strong><a href="#">Price range</a></strong></h5>
-            <form role="form" class="form">
+            
               <div class="form-group col-sm-4 no-padding">
                 <input type="number" name="minValue" ng-model="filterModelMin.list_price" placeholder="$2000" class="form-control"/>
               </div>
@@ -44,7 +44,7 @@
               <div class="form-group col-sm-3 no-padding">
                 <button class="btn btn-default pull-right" ng-click="onClick()">GO</button>
               </div>
-            </form>
+           
             <div style="clear:both"></div>
           </div>
 
@@ -57,17 +57,21 @@
       
       <div class="category-list">
         <div class="tab-box ">
-            <ul class="nav nav-tabs add-tabs" id="ajaxTabs" role="tablist">
-                <li class="active"><a href="#allAds" data-url="ajax/1.html" role="tab" data-toggle="tab">All Ads <span class="badge">228,705</span></a></li>
-                <li><a href="#businessAds" data-url="ajax/2.html" role="tab" data-toggle="tab">Business <span class="badge">22,805</span></a></li>
-                <li><a href="#personalAds" data-url="ajax/3.html" role="tab" data-toggle="tab">Personal <span class="badge">18,705</span></a></li>
+
+            <ul class="nav nav-tabs add-tabs" role="tablist">
+                <li class="active"><a href="#allAds" role="tab" ng-click="tabs[0].active = true">All Ads <span class="badge">228,705</span></a></li>
+
+                <li ng-click="tabs[1].active = true"><a ng-click="tabs[1].active = true" role="tab">Business <span class="badge">22,805</span></a></li>
+
+                <li><a role="tab" ng-click="tabs[2].active = true">Personal <span class="badge">18,705</span></a></li>
             </ul>
+
+
             <div class="tab-filter">
                 <div class="selecter select-short-by closed" tabindex="0">
                     <select class="selectpicker selecter-element" data-style="btn-select" data-width="auto" tabindex="-1" ng-model="orderProp">
-                        <option value="Short by">Short by</option>
-                        <option value="list_price">List Price</option>
-                        <option value="create_date">Newest</option>
+                        <option value="list_price">Price: Low to High</option>
+                        <option value="-list_price">Price: High to Low</option>
                     </select>
 
                     <span class="selecter-selected">Short by</span>
@@ -84,14 +88,17 @@
                         <span class="selecter-item" data-value="Price: High to Low">Price: High to Low</span>
                     </div>
                  </div>
-            </div>
+            </div><!-- tab-filter-->
+
         </div><!--/.tab-box-->
       </div><!--/.category-list-->
 
 
       <div class="listing-filter">
         <div class="pull-left col-xs-6">
+
             <div class="breadcrumb-list" ng-controller="DropdownCtrl">
+
               <div class="btn-group" dropdown is-open="status.isopen">
                 <button type="button" class="btn btn-default btn-xs dropdown-toggle" dropdown-toggle ng-disabled="disabled"> For Sale <span class="caret"></span>
                 </button>
@@ -101,6 +108,10 @@
                   </li>
                 </ul>
               </div>
+
+
+
+
             </div>
         </div>
         <div class="pull-right col-xs-6 text-right listing-view-action"> 
@@ -117,96 +128,41 @@
               <div class="tab-content">
 
 
-<div ng-controller="TabsCtrl">
-  <p>Select a tab by setting active binding to true:</p>
-  <p>
-    <button class="btn btn-default btn-sm" ng-click="tabs[0].active = true">Select second tab</button>
-    <button class="btn btn-default btn-sm" ng-click="tabs[1].active = true">Select third tab</button>
-  </p>
-  <p>
-    <button class="btn btn-default btn-sm" ng-click="tabs[1].disabled = ! tabs[1].disabled">Enable / Disable third tab</button>
-  </p>
-  <hr />
-
-  <tabset>
-    <tab heading="Static title">Static content</tab>
-    <tab ng-repeat="tab in tabs" heading="{{tab.title}}" active="tab.active" disable="tab.disabled">
-      {{tab.content}}
-    </tab>
-    <tab select="alertMe()">
-      <tab-heading>
-        <i class="glyphicon glyphicon-bell"></i> Alert!
-      </tab-heading>
-      I've got an HTML heading, and a select callback. Pretty cool!
-    </tab>
-  </tabset>
-
-  <hr />
-
-  <tabset vertical="true" type="pills">
-    <tab heading="Vertical 1">Vertical content 1</tab>
-    <tab heading="Vertical 2">Vertical content 2</tab>
-  </tabset>
-
-  <hr />
-
-  <tabset justified="true">
-    <tab heading="Justified">Justified content</tab>
-    <tab heading="SJ">Short Labeled Justified content</tab>
-    <tab heading="Long Justified">Long Labeled Justified content</tab>
-  </tabset>
-</div>
 
 
-
-
-
-              
                   <div class="tab-pane active" id="allAds"> 
                      
 
 <div class="item-list" ng-repeat="product in products | filter:query | orderBy:orderProp | filter:byRange('list_price', filterModelMin.list_price, filterModelMax.list_price)">
 
-  <div class="col-sm-2 no-padding photobox">
-    <div class="add-image"> <span class="photo-count"><i class="ion-ios-camera"></i> 2 </span>
-      <a href="details">
-        <img class="thumbnail no-margin" 
-          src="http://www.wpsstatic.com/WPSIMAGES/midsized_thumb/{{product.image}}" alt="img">
-      </a>
+  <div vlass="product">
+    <div class="col-sm-2 no-padding photobox">
+      <div class="add-image"> <span class="photo-count"><i class="ion-ios-camera"></i> 2 </span>
+        <a href="details">
+          <img class="thumbnail no-margin" 
+            src="http://www.wpsstatic.com/WPSIMAGES/thumbs/{{product.image}}" alt="img">
+        </a>
+      </div>
+    </div>
+    <div class="col-sm-7 add-desc-box">
+      <div class="add-details">
+        <h5 class="add-title"> <a href="details"> {{product.description}} </a> </h5>
+        <span class="info-row"> <span class="add-type business-ads tooltipHere" data-toggle="tooltip" data-placement="right" title="{{product.description}}" data-original-title="{{product.vendor_id}}">B </span> <span class="date"><i class="ion-ios-calendar-outline"> </i> Today 1:21 pm </span> - <span class="category">{{product.vendor_id}} </span>- <span class="item-location"><i class="ion-ios-location"></i> Charlotte, NC </span> </span>
+      </div>
+    </div>
+    <div class="col-sm-3 text-right  price-box">
+      <h2 class="item-price"> $ {{product.list_price}} </h2>
+      <a class="btn btn-default  btn-sm make-favorite"> <i class="ion-ios-heart"></i> <span>Save</span> </a>
     </div>
   </div>
-  <div class="col-sm-7 add-desc-box">
-    <div class="add-details">
-      <h5 class="add-title"> <a href="details"> {{product.description}} </a> </h5>
-      <span class="info-row"> <span class="add-type business-ads tooltipHere" data-toggle="tooltip" data-placement="right" title="{{product.description}}" data-original-title="{{product.vendor_id}}">B </span> <span class="date"><i class="ion-ios-calendar-outline"> </i> Today 1:21 pm </span> - <span class="category">{{product.vendor_id}} </span>- <span class="item-location"><i class="ion-ios-location"></i> Charlotte, NC </span> </span>
-    </div>
-  </div>
-  <div class="col-sm-3 text-right  price-box">
-    <h2 class="item-price"> $ {{product.list_price}} </h2>
-    <a class="btn btn-default  btn-sm make-favorite"> <i class="ion-ios-heart"></i> <span>Save</span> </a>
-  </div>
 
-</div>
+</div><!-- item-list -->
 
 
 
 
 
 
-
-
-
-
-
-
-
-                  </div><!--/.tab-pane #allAds-->
-                  <div class="tab-pane" id="businessAds">
-                      
-                  </div><!--/.tab-pane #businessAds-->
-                  <div class="tab-pane" id="personalAds">
-                      
-                  </div><!--/.tab-pane #personalAds-->
               </div><!--/.tab-content-->
               <div class="tab-box  save-search-bar text-center"> 
                   <a href="javascript:void(0);"><i class="ion-ios-heart size-15"> </i> Save Search </a> 

@@ -1,0 +1,54 @@
+<?xml version="1.0"?>
+
+<rdf:RDF xmlns="http://purl.org/rss/1.0/"
+         xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+         xmlns:cl="http://www.craigslist.org/about/cl-bulk-ns/1.0">
+
+<channel>
+  <items>
+    <rdf:li rdf:resource="CLTPalmerMotorsportsProducts1"/>
+  </items>
+  <cl:auth username="todd@palmermotorsportsnc.com"
+           password="Palmer2015"
+           accountID="14"/>
+</channel>
+
+<item rdf:about="CLTPalmerMotorsportsProducts1">
+
+  <!-- required item  attributes -->
+  <cl:category>mcd</cl:category>
+  <cl:area>CHA</cl:area>
+  <cl:replyEmail  privacy="P"
+                  outsideContactOK="0"
+                  otherContactInfo="(704) 489-1125">
+                  todd@palmermotorsportsnc.com
+                  </cl:replyEmail>
+<title><![CDATA[{title}]]></title>
+  <cl:mapLocation city="Denver"
+                  state="NC"
+                  postal="28037"
+                  latitude="35.510386"
+                  longitude="-81.0032326"/>
+
+
+  <!-- optional item  attributes -->
+  <description><![CDATA[{product_description}]]></description>
+  <cl:auto_basics
+
+    auto_fuel_type="<![CDATA[{{product_fuel_type}]]>"
+    auto_make_model="<![CDATA[ {product_make} {product_model} ]]>"
+    auto_miles="<![CDATA[{{product_miles}]]>"
+    auto_paint="<![CDATA[{{product_paint}]]>"
+
+    auto_title_status="<![CDATA[{{product_title_status}]]>"
+    engine_displacement_cc="<![CDATA[{{product_engine_typ_cc}]]>"
+    auto_transmission="<![CDATA[{{product_transmission}]]>"
+    auto_miles="<![CDATA[{{product_miles}]]>"
+    auto_year="<![CDATA[{{product_year}]]>"
+    auto_vin="<![CDATA[{{product_vin}]]>"
+    >
+
+  <cl:PONumber>Purchase Order <![CDATA[{094122}]]></cl:PONumber>
+</item>
+
+</rdf:RDF>

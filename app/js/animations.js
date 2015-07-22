@@ -1,6 +1,6 @@
 var productAnimations = angular.module('productAnimations', ['ngAnimate']);
 
-productAnimations.animation('.product', function() {
+productAnimations.animation('.item-list', function() {
 
   var animateUp = function(element, className, done) {
     if(className != 'active') {

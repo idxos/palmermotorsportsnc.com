@@ -1,0 +1,27 @@
+
+
+<div class="item-list" ng-repeat="item in items | filter:query | orderBy:orderProp | filter:byRange('list_price', filterModelMin.list_price, filterModelMax.list_price)">
+
+  <div vlass="item">
+    <div class="col-sm-2 no-padding photobox">
+      <div class="add-image"> <span class="photo-count"><i class="ion-ios-camera"></i> 2 </span>
+        <a href="details">
+          <img class="thumbnail no-margin" 
+            src="http://www.wpsstatic.com/WPSIMAGES/thumbs/{{item.image}}" alt="img">
+        </a>
+      </div>
+    </div>
+    <div class="col-sm-7 add-desc-box">
+      <div class="add-details">
+        <h5 class="add-title"> <a href="details"> {{item.description}} </a> </h5>
+        <span class="info-row"> <span class="add-type business-ads tooltipHere" data-toggle="tooltip" data-placement="right" title="{{item.description}}" data-original-title="{{item.vendor_id}}">B </span> <span class="date"><i class="ion-ios-calendar-outline"> </i> Today 1:21 pm </span> - <span class="category">{{item.vendor_id}} </span>- <span class="item-location"><i class="ion-ios-location"></i> Charlotte, NC </span> </span>
+      </div>
+    </div>
+    <div class="col-sm-3 text-right  price-box">
+      <h2 class="item-price"> $ {{item.list_price}} </h2>
+      <a class="btn btn-default  btn-sm make-favorite"> <i class="ion-ios-heart"></i> <span>Save</span> </a>
+    </div>
+  </div>
+
+</div><!-- item-list -->
+

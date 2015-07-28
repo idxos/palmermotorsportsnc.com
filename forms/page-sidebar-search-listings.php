@@ -1,6 +1,6 @@
 <div class="reg-sidebar-inner text-center">
-    <div class="promo-text-box"> 
-    <embed type="image/svg+xml" class="icon-color-3" src="http://palmermotorsportsnc.com/images/uploads/primary-icons/dirtbike.svg" />    
+  <div class="promo-text-box">
+    <embed type="image/svg+xml" class="icon-color-3" src="http://palmermotorsportsnc.com/images/uploads/primary-icons/dirtbike.svg" />
         <h3><strong>We Buy Bikes!</strong></h3>
         <p>
             FREE quote in seconds, call Todd at the shop <br>

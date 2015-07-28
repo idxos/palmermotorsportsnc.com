@@ -13126,7 +13126,10 @@ fieldset[disabled] .btn-inverse.active {
     border-bottom: 1px solid #ddd; }
 
   .navbar-site .navbar-toggle {
-    margin-top: 25px; } }
+    margin-top: 25px; }
+
+  .select.selectpicker {
+    width: 100%; } }
 @media (min-width: 768px) {
   .logo {
     height: 80px;
@@ -14661,7 +14664,7 @@ div.login-box .panel-footer label {
   text-align: left; }
 
 /* =============================================================== */
-/* USER PANEL || ACCOUNT  
+/* USER PANEL || ACCOUNT
 /* =============================================================== */
 .panel-title {
   padding-bottom: 0; }
@@ -15189,6 +15192,68 @@ body {
 
 .nav, .pagination, .carousel, .panel-title a {
   cursor: pointer; }
+
+.thumbnail {
+  display: block;
+  padding: 8px;
+  margin-bottom: 20px;
+  line-height: 1.42857143;
+  background-color: #fff;
+  border: none;
+  border-radius: 4px;
+  -webkit-transition: border .2s ease-in-out;
+  -o-transition: border .2s ease-in-out;
+  transition: border .2s ease-in-out;
+  cursor: pointer; }
+
+h4 a {
+  font-weight: bold;
+  color: #000 !important;
+  cursor: pointer; }
+  h4 a:hover {
+    cursor: pointer;
+    text-decoration: none; }
+
+.btn-white {
+  color: #555555;
+  background-color: #FFFFFF;
+  border: 1px solid #ccc !important; }
+
+.btn-white:hover,
+.btn-white:focus,
+.btn-white:active,
+.btn-white.active,
+.open .dropdown-toggle.btn-white {
+  color: #555555;
+  background-color: #CCCCCC;
+  border: 1px solid #ccc !important; }
+
+.btn-white:active,
+.btn-white.active,
+.open .dropdown-toggle.btn-white {
+  background-image: none; }
+
+.btn-white.disabled,
+.btn-white[disabled],
+fieldset[disabled] .btn-white,
+.btn-white.disabled:hover,
+.btn-white[disabled]:hover,
+fieldset[disabled] .btn-white:hover,
+.btn-white.disabled:focus,
+.btn-white[disabled]:focus,
+fieldset[disabled] .btn-white:focus,
+.btn-white.disabled:active,
+.btn-white[disabled]:active,
+fieldset[disabled] .btn-white:active,
+.btn-white.disabled.active,
+.btn-white[disabled].active,
+fieldset[disabled] .btn-white.active {
+  background-color: #FFFFFF;
+  border: 1px solid #ccc; }
+
+.btn-white .badge {
+  color: #FFFFFF;
+  background-color: #555555; }
 
 /****** LOGIN MODAL ******/
 .loginmodal-container {
@@ -17656,7 +17721,7 @@ div.login-box .panel-footer label {
   text-align: left; }
 
 /* =============================================================== */
-/* USER PANEL || ACCOUNT  
+/* USER PANEL || ACCOUNT
 /* =============================================================== */
 .panel-title {
   padding-bottom: 0; }

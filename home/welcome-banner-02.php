@@ -1,6 +1,6 @@
 
 <style>
-   
+
     .parallax-container {
         min-height: 350px;
         color: #fff;
@@ -17,29 +17,29 @@
     }
 
     .parallax-container p.lead {
-        
+
     }
 
     .parallax-container p {
-        
+
     }
 
     .parallax-container button {
-        
+
     }
 
 
 </style>
 
 
-<div class="parallax-container" 
-    data-parallax="scroll" 
-    data-bleed="0" 
-    data-image-src="images/uploads/palmer-sliders/palmer-motorsports-front-02.jpg" 
-    data-natural-width="1289" 
+<div class="parallax-container"
+    data-parallax="scroll"
+    data-bleed="0"
+    data-image-src="images/uploads/palmer-sliders/palmer-motorsports-front-02.jpg"
+    data-natural-width="1289"
     data-natural-height="350">
-<!-- Start Parallax content --> 
-        
+<!-- Start Parallax content -->
+
     <div class="intro">
         <div class="dtable hw100">
             <div class="dtable-cell hw100">
@@ -71,7 +71,7 @@
                     <div class="row search-row">
                         <section class="col-lg-3"><img src="images/uploads/powersport-logos/white-ski-doo.png" class="img-responsive fadeInLeft"></section>
                         <section class="col-lg-3"><img src="images/uploads/powersport-logos/white-polaris.png" class="img-responsive fadeInLeft"></section>
-                        <section class="col-lg-3"><img src="images/uploads/powersport-logos/white-harley-davidson.png" class="img-responsive fadeInLeft"></section>
+                        <section class="col-lg-3"></section>
                         <section class="col-lg-3"></section>
                     </div><!-- row -->
 
@@ -83,4 +83,3 @@
 
 <!-- /.parallax-container -->
 </div>
-

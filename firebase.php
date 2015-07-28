@@ -273,6 +273,8 @@
                     </a>
                 </div>
             </header>
+
+            
             <article class="grid-fluid">
                 <!-- STEP 1 ########################## -->
                 <div class="content-block content-number clearfix">

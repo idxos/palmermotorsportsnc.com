@@ -8,14 +8,14 @@
     <meta name="author" content="Bartosz Wojciechowski">
 
     <link href='http://fonts.googleapis.com/css?family=Open+Sans:400italic,400,300,600,700' rel='stylesheet' type='text/css'>
-    <link href="../assets/css/bootstrapTheme.css" rel="stylesheet">
-    <link href="../assets/css/custom.css" rel="stylesheet">
+    <link href="assets/owl-carousel/assets/css/bootstrapTheme.css" rel="stylesheet">
+    <link href="assets/owl-carousel/assets/css/custom.css" rel="stylesheet">
 
     <!-- Owl Carousel Assets -->
-    <link href="../owl-carousel/owl.carousel.css" rel="stylesheet">
-    <link href="../owl-carousel/owl.theme.css" rel="stylesheet">
+    <link href="assets/owl-carousel/owl.carousel.css" rel="stylesheet">
+    <link href="assets/owl-carousel/owl.theme.css" rel="stylesheet">
 
-    <link href="../assets/js/google-code-prettify/prettify.css" rel="stylesheet">
+    <link href="assets/js/google-code-prettify/prettify.css" rel="stylesheet">
 
     <!-- Le fav and touch icons -->
     <link rel="apple-touch-icon-precomposed" sizes="144x144" href="../assets/ico/apple-touch-icon-144-precomposed.png">
@@ -308,8 +308,8 @@ $(document).ready(function() {
     </div>
 
 
-    <script src="../assets/js/jquery-1.9.1.min.js"></script> 
-    <script src="../owl-carousel/owl.carousel.js"></script>
+    <script src="assets/owl-carousel/assets/js/jquery-1.9.1.min.js"></script> 
+    <script src="assets/owl-carousel/owl.carousel.js"></script>
 
 
     <!-- Demo -->
@@ -347,12 +347,12 @@ $(document).ready(function() {
     </script>
 
 
-    <script src="../assets/js/bootstrap-collapse.js"></script>
-    <script src="../assets/js/bootstrap-transition.js"></script>
-    <script src="../assets/js/bootstrap-tab.js"></script>
+    <script src="assets/owl-carousel/assets/js/bootstrap-collapse.js"></script>
+    <script src="assets/owl-carousel/assets/js/bootstrap-transition.js"></script>
+    <script src="assets/owl-carousel/assets/js/bootstrap-tab.js"></script>
 
-    <script src="../assets/js/google-code-prettify/prettify.js"></script>
-      <script src="../assets/js/application.js"></script>
+    <script src="assets/owl-carousel/assets/js/google-code-prettify/prettify.js"></script>
+      <script src="assets/owl-carousel/assets/js/application.js"></script>
 
   </body>
 </html>

@@ -29,8 +29,6 @@
 
 
 
-
-
 @media (min-width: 1024px) {
     .container {
         max-width: 1024px;
@@ -624,6 +622,9 @@ fieldset[disabled] .btn-inverse.active {
     }
     .navbar-site .navbar-toggle {
         margin-top: 25px;
+    }
+    .select.selectpicker {
+      width: 100%;
     }
 }
 
@@ -2493,7 +2494,7 @@ div.login-box .panel-footer label {
   text-align: left;
 }
 /* =============================================================== */
-/* USER PANEL || ACCOUNT  
+/* USER PANEL || ACCOUNT
 /* =============================================================== */
 .panel-title {
   padding-bottom: 0;
@@ -2733,7 +2734,7 @@ td.ads-details-td {
     width:100%;
     height:100%;
     position:relative;
-    
+
 }
 
 .social-list {
@@ -2768,7 +2769,7 @@ td.ads-details-td {
     display:block;
     clear:both;
     clear:#fff;
-    
+
 }
 
 .parallaxbox * {
@@ -2884,7 +2885,7 @@ td.ads-details-td {
     padding-bottom: 30px;
     padding-top: 30px;
   }
-  
+
   h1 {
     font-size: 24px;
     line-height: 25px;
@@ -2904,7 +2905,7 @@ td.ads-details-td {
     font-size: 16px;
     line-height: 18px;
   }
-  
+
   .page-sidebar {
       padding:0 5px;
   }
@@ -2915,7 +2916,7 @@ td.ads-details-td {
          padding: 5px 4px;
          font-size:11px;
   }
-  
+
 }
 
 @media (min-width: 768px) {
@@ -2927,7 +2928,7 @@ td.ads-details-td {
     text-indent: -9999px;
     opacity: 0;
   }
-  
+
 
 }
 
@@ -2999,10 +3000,10 @@ td.ads-details-td {
     opacity: 1;
     cursor: pointer;
   }
-  
+
   .xs-gap {
       margin-bottom:15px;
- 
+
   }
 
   .icon-down-open-big {
@@ -3121,11 +3122,11 @@ td.ads-details-td {
     margin-right: 2px;
     width: 70px;
   }
-  
+
   .container, body, html {
       min-width:300px;
   }
-  
+
 }
 @media (max-width: 320px) {
     .navbar .container {

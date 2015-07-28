@@ -8,7 +8,7 @@
                 </a>
             </div>
             <div class="navbar-collapse collapse">
-                <ul class="nav navbar-nav navbar-right">                    
+                <ul class="nav navbar-nav navbar-right">
 
                     <li class="dropdown">
                         <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Pages <span class="caret"></span></a>
@@ -31,29 +31,6 @@
                         </ul>
                     </li>
 
-
-                    <li class="dropdown">
-                        <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Forms<span class="caret"></span></a>
-                        <ul class="dropdown-menu">
-                            <li><a href="site-store-create-post.php">Add New Item</a></li>
-                            <li><a href="site-store-read-post.php">Read</a></li>
-                            <li><a href="site-store-update-post.php">Update</a></li>
-                            <li><a href="site-store-destroy-post.php">Destroy</a></li>
-                            
-                        </ul>
-                    </li>
-                            
-                    <li class="dropdown">
-                        <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Tables<span class="caret"></span></a>
-                        <ul class="dropdown-menu">
-                            <li><a href="site-store-table-all-inventory.php">All Inventory</a></li>
-                            <li><a href="site-store-table-all-members.php">All Members</a></li>
-                            <li><a href="site-store-table-all-sales.php">All Sales</a></li>
-                            <li><a href="site-store-table-all-site-emails.php">All Site Emails</a></li>
-                        </ul>
-                    </li>
-                                
-
                     <li class="dropdown">
                         <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Site Admin <span class="caret"></span></a>
                         <ul class="dropdown-menu">
@@ -73,44 +50,21 @@
                                 <li><a href="site-store-new-post.php">Add New Post</a></li>
                         </ul>
                     </li>
-
-
-
                     <li class="dropdown">
                         <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Account <span class="caret"></span></a>
                         <ul class="dropdown-menu">
-                            <li role="separator" class="divider"></li>
-                            <li><a href="shop.php">Shop</a></li>
-                            <li><a href="shopping-cart.php">Shopping Cart</a></li>
-                            <li><a href="checkout.php">Checkout</a></li>
-                            <li><a href="checkout-error.php">Checkout Error</a></li>
-                            <li><a href="checkout-success.php">Checkout Success</a></li>
-
-                        <li role="separator" class="divider"></li>
-                            <li><a href="invoice-buyerphp">Invoice Buyer</a></li>
-                            <li><a href="email-buyer.php">Email Buyer</a></li>
-                            <li><a href="invoice-seller.php">Invoice Seller</a></li>
-                            <li><a href="email-seller.php">Email Seller</a></li>
-
-                        <li role="separator" class="divider"></li>
                             <li><a href="#" data-toggle="modal" data-target="#login-modal">Login</a></li>
-                            <li><a href="signup.php">Signup</a></li>
-
+                            <li><a href="#">Join FREE</a></li>
                         <li role="separator" class="divider"></li>
-                            <li><a href="customer-account.php">Customer Account</a></li>
                             <li><a href="logout.php">Logout</a></li>
                         </ul>
                     </li>
-
-
-                    <li class="postadd"><a class="btn btn-block btn-border btn-post btn-danger" href="cart.php">Cart</a></li>
+                    <li class="postadd"><a class="btn btn-block btn-border btn-post btn-danger" href="tel:+17044891125">(704) 489-1125</a></li>
                 </ul>
             </div>
         </div>
     </nav>
 </div>
-
-
 
 <div class="modal fade" id="login-modal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true" style="display: none;">
   <div class="modal-dialog">
@@ -121,7 +75,7 @@
             <input type="password" name="pass" placeholder="Password">
             <input type="submit" name="login" class="login loginmodal-submit" value="Login">
           </form>
-            
+
           <div class="login-help text-center">
             <a href="#">Register</a> - <a href="#">Forgot Password</a>
           </div>

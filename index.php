@@ -39,8 +39,8 @@
     <!--[if gt IE 8]><!-->
     <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap.min.css" rel="stylesheet">
     <link href="assets/css/palmer-sass-styles.css" rel="stylesheet">
-    
-    
+
+
     <script type="text/javascript">
       (function(){
         var isiPad = navigator.userAgent.match(/iPad/i) != null;
@@ -65,13 +65,13 @@
 <div id="wrapper">
 
     <?php include('global_embeds/top-nav-white.php'); ?>
-    
+
 
 
     <?php include('forms/search-nav-02.php'); ?>  
-           
 
-    <div class="main-container">        
+
+    <div class="main-container">
         <div class="container">
             <div class="row">
                 <section class="col-sm-3 page-sidebar">
@@ -80,7 +80,10 @@
                     </aside>
                 </section>
                 <section class="col-sm-9 page-content col-thin-left">
-                
+
+
+
+
                     <div class="category-list">
 
                         <?php include('forms/category-list.php'); ?>
@@ -91,18 +94,18 @@
                         <div class="adds-wrapper">
 
                             <div class="tab-content">
-                                <div class="tab-pane active" id="allAds"> 
+                                <div class="tab-pane active" id="allAds">
                                     <?php include('categories/all-ads.php'); ?>
                                 </div><!--/.tab-pane #allAds-->
                                 <div class="tab-pane" id="businessAds">
-                                    
+
                                 </div><!--/.tab-pane #businessAds-->
                                 <div class="tab-pane" id="personalAds">
-                                    
+
                                 </div><!--/.tab-pane #personalAds-->
                             </div><!--/.tab-content-->
-                            <div class="tab-box  save-search-bar text-center"> 
-                                <a href=""><i class="ion-ios-heart size-15"> </i> Save Search </a> 
+                            <div class="tab-box  save-search-bar text-center">
+                                <a href=""><i class="ion-ios-heart size-15"> </i> Save Search </a>
                             </div>
 
                         </div><!--/.adds-wrapper-->
@@ -121,7 +124,7 @@
                         </ul>
                     </div><!-- End pagination -->
 
-                                         
+
                     <div class="post-promo text-center">
                         <h2> Do you have something to sell ? </h2>
                         <h5>Sell your products online FOR FREE. It's easier than you think !</h5>
@@ -146,11 +149,11 @@
 
 </div><!-- #wrapper -->
 
-        
+
     <script src="//ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
     <script>window.jQuery || document.write('<script src="js/jquery-1.10.2.min.js"><\/script>')</script>
     <script src="//netdna.bootstrapcdn.com/bootstrap/3.1.0/js/bootstrap.min.js"></script>
-     
+
     <script src="assets/js/app.js" type="text/javascript"></script>
     <script src="assets/js/owl.carousel.min.js"></script>
     <script src="assets/js/jquery.matchHeight-min.js"></script>
@@ -169,6 +172,25 @@
     var value = $(this).val();
 });
 </script>
+
+
+<script>
+var settings = {
+  "async": true,
+  "crossDomain": true,
+  "url": "http://api.wpswebservices.com/item",
+  "method": "GET",
+  "headers": {
+    "authorization": "Basic RDIwNjA0MDg6MDAwMTEw",
+    "accept": "application/vnd.wps_api.v3+json"
+  }
+}
+
+$.ajax(settings).done(function (response) {
+  console.log(response);
+});
+</script>
+
 
 
 

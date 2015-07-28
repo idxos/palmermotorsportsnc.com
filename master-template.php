@@ -35,8 +35,8 @@
 
     <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap.min.css" rel="stylesheet">
     <link href="assets/css/palmer-sass-styles.css" rel="stylesheet">
-    
-    
+
+
 
 
 </head>
@@ -46,59 +46,55 @@
 <div class="main-container">
     <div class="container">
         <div class="row">
-            <section class="col-xs-12 page-content">
+            <section class="col-lg-12 page-content">
                 <form>
                     <div class="inner-box category-content">
                         <h2 class="title-2 uppercase"><strong> <i class="icon-docs"></i> Add a New Posting</strong> </h2>
-                          <div class="row">
-                            <div class="col-xs-6">
-                                <div class="form-group">
-                                  <label for="title">Title</label>
-                                  <input type="text" class="form-control" placeholder="New Suzuki XYZ Dirtbike Motorcycle">
-                                  <span class="help-block">A great title needs at least 60 characters. </span>
+                            <div class="row">
+                                <div class="col-lg-6 col-sm-6 col-xs-12">
+                                    <div class="form-group">
+                                      <label for="title">Title</label>
+                                      <input type="text" class="form-control" placeholder="New Suzuki XYZ Dirtbike Motorcycle">
+                                      <span class="help-block">A great title needs at least 60 characters. </span>
+                                    </div>
                                 </div>
-                            </div>
-                            <div class="col-xs-2">
-                                <div class="form-group">
-                                    <label for="product_price">Price</label>
-                                    <div class="input-group">
-                                        <div class="input-group-addon">$</div>
-                                        <input type="text" class="form-control" id="product_price" placeholder="Price">
+                                <div class="col-lg-2 col-sm-2 col-xs-12">
+                                    <div class="form-group">
+                                        <label for="product_price">Price</label>
+                                        <div class="input-group">
+                                            <div class="input-group-addon">$</div>
+                                            <input type="text" class="form-control" id="product_price" placeholder="Price" data-toggle="tooltip" data-placement="bottom" title="Enter price">
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-lg-2 col-sm-2 col-xs-12">
+                                    <div class="form-group">
+                                        <label for="title">Location</label>
+                                        <input type="text" class="form-control" placeholder="Denver, NC" data-toggle="tooltip" data-placement="bottom" title="General location, please enter your city name.">
+                                    </div>
+                                </div>
+                                <div class="col-lg-2 col-sm-2 col-xs-12">
+                                  <div class="form-group">
+                                        <label for="title">Zip</label>
+                                        <input type="text" class="form-control" placeholder="28037" data-toggle="tooltip" data-placement="bottom" title="Enter your zip-code.">
+                                    </div>
+                                </div>
+                              </div>
+                              <div class="row">
+                                <div class="col-lg-12 col-xs-12">
+                                    <div class="form-group">
+                                      <label for="product_bodytype">Description</label>
+                                      <textarea class="form-control" rows="10"></textarea>
                                     </div>
                                 </div>
                             </div>
-                            <div class="col-xs-2">
-                                <div class="form-group">
-                                    <label for="title">Location</label>
-                                    <input type="text" class="form-control" placeholder="Denver, NC" data-toggle="tooltip" data-placement="bottom" title="General location, please enter your city name.">
-                                </div>
-                            </div>
-                            <div class="col-xs-2">
-                              <div class="form-group">
-                                    <label for="title">Zip</label>
-                                    <input type="text" class="form-control" placeholder="28037" data-toggle="tooltip" data-placement="bottom" title="Enter your zip-code.">
-                                </div>
-                            </div>
-                          </div>
-                          <div class="row">
-                            <div class="col-xs-12">
-                                <div class="form-group">
-                                  <label for="product_bodytype">Description</label>
-                                  <textarea class="form-control" rows="10"></textarea>
-                                </div>
-                            </div>
-                          </div>
 
-                        <div class="content-subheading"> <i class="icon-user fa"></i> <strong>Sub Heading Section Here</strong> </div>
-                          
-                        <div class="well">
-                            <h3><i class=" icon-certificate icon-color-1"></i> Posting Details</h3>
-                            <p>Premium ads help sellers promote their product or service by getting their ads more visibility with more buyers and sell what they want faster. <a href="help.html">Learn more</a></p>
+                            
                             <div class="row">
-                                <div class="col-xs-3">
+                                <div class="col-lg-3 col-sm-3 col-xs-12">
                                     <div class="form-group">
                                         <label for="product_make">Make</label>
-                                        <select class="selectpicker show-tick">
+                                        <select class="selectpicker show-tick" data-width="100%" data-style="btn-white" data-container="body">
                                             <option value="yamaha">Yamaha</option>
                                             <option value="suzuki">Suzuki</option>
                                             <option value="honda">Honda</option>
@@ -109,16 +105,16 @@
                                         </select>
                                     </div>
                                 </div>
-                                <div class="col-xs-3">
+                                <div class="col-lg-3 col-sm-3 col-xs-12">
                                     <div class="form-group">
                                         <label for="product_model">Model</label>
-                                        <input name="product_model" type="text" class="col-xs-12 form-control">
+                                        <input name="product_model" type="text" class="col-lg-12 form-control">
                                     </div>
                                 </div>
-                                <div class="col-xs-3">
+                                <div class="col-lg-3 col-sm-3 col-xs-12">
                                     <div class="form-group">
                                         <label for="product_year">Year</label>
-                                        <select class="selectpicker show-tick">
+                                        <select class="selectpicker show-tick" data-width="100%" data-style="btn-white" data-container="body">
                                             <option value="2015">2015</option>
                                             <option value="2014">2014</option>
                                             <option value="2013">2013</option>
@@ -134,10 +130,10 @@
                                         </select>
                                     </div>
                                 </div>
-                                <div class="col-xs-3">
+                                <div class="col-lg-3 col-sm-3 col-xs-12">
                                     <div class="form-group">
                                         <label for="product_title_status">Title Status</label>
-                                        <select class="selectpicker show-tick">
+                                        <select class="selectpicker show-tick" data-width="100%" data-style="btn-white" data-container="body">
                                             <option value="clean">Clean</option>
                                             <option value="parts\only">Parts Only</option>
                                             <option value="rebuilt">Rebuilt</option>
@@ -148,19 +144,19 @@
                                 </div>
                             </div>
                             <div class="row">
-                                <div class="col-xs-5">
+                                <div class="col-lg-5 col-sm-5 col-xs-12">
                                     <div class="form-group">
                                         <label for="product_vin">VIN</label>
                                         <input name="product_vin" type="text" class="form-control">
                                     </div>
                                 </div>
-                                <div class="col-xs-3">
+                                <div class="col-lg-3 col-sm-3 col-xs-12">
                                     <div class="form-group">
-                                        <label for="product_engine_cc">Engine Displacement (CC's)</label>
+                                        <label for="product_engine_cc">Engine CC's</label>
                                         <input name="product_engine_cc" type="text" class="form-control">
                                     </div>
                                 </div>
-                                <div class="col-xs-4">
+                                <div class="col-lg-4 col-sm-4 col-xs-12">
                                     <div class="form-group">
                                         <label for="product_miles">Odometer</label>
                                         <input name="product_miles" type="text" class="form-control" placeholder="ex: 96 miles">
@@ -168,26 +164,26 @@
                                 </div>
                             </div>
                             <div class="row">
-                                <div class="col-xs-3">         
+                                <div class="col-lg-3 col-sm-3 col-xs-12">
                                     <div class="form-group">
                                         <label for="product_condition">Condition</label>
-                                        <select class="selectpicker show-tick">
-                                            <option value="">-</option> 
-                                            <option value="new">new</option> 
-                                            <option value="like new">like new</option> 
-                                            <option value="excellent">excellent</option> 
-                                            <option value="good">good</option> 
-                                            <option value="fair">fair</option> 
-                                            <option value="salvage">salvage</option>
-                                            <option value="other">other...</option>
+                                        <select class="selectpicker show-tick" data-width="100%" data-style="btn-white" data-container="body">
+                                            <option value="new">New</option>
+                                            <option value="like new">Like New</option>
+                                            <option value="excellent">excellent</option>
+                                            <option value="good">Good</option>
+                                            <option value="fair">Fair</option>
+                                            <option value="salvage">Salvage</option>
+                                            <option value="other">Other...</option>
+                                            <option value="-">-</option>
                                         </select>
                                         </select>
                                     </div>
                                 </div>
-                                <div class="col-xs-3">
+                                <div class="col-lg-3 col-sm-3 col-xs-12">
                                     <div class="form-group">
                                         <label for="product_paint">Paint</label>
-                                        <select class="selectpicker show-tick">
+                                        <select class="selectpicker show-tick" data-width="100%" data-style="btn-white" data-container="body">
                                           <option value="black">Black</option>
                                           <option value="blue">Blue</option>
                                           <option value="brown">Brown</option>
@@ -204,36 +200,41 @@
                                         </select>
                                     </div>
                                 </div>
-                                <div class="col-xs-3">        
+                                <div class="col-lg-3 col-sm-3 col-xs-12">
                                     <div class="form-group">
                                         <label for="product_fuel_type">Fuel Type</label>
-                                        <select class="selectpicker show-tick">
-                                            <option value="-">-</option>
+                                        <select class="selectpicker show-tick" data-width="100%" data-style="btn-white" data-container="body">
                                             <option value="gas">Gas</option>
                                             <option value="diesel">Diesel</option>
                                             <option value="electric">Electric</option>
                                             <option value="hybrid">Hybrid</option>
                                             <option value="other">Other</option>
+                                            <option value="-">-</option>
                                         </select>
                                     </div>
                                 </div>
-                                <div class="col-xs-3">         
+                                <div class="col-lg-3 col-sm-3 col-xs-12">
                                     <div class="form-group">
                                         <label for="product_transmission">Transmission</label>
-                                        <select class="selectpicker show-tick">
-                                            <option value="-">-</option>
+                                        <select class="selectpicker show-tick" data-width="100%" data-style="btn-white" data-container="body">
                                             <option value="automatic">Automatic</option>
                                             <option value="manual">Manual</option>
                                             <option value="semi-auto">Semi-auto</option>
+                                            <option value="-">-</option>
                                         </select>
                                     </div>
                                 </div>
                             </div>
-                        </div>
+                        
 
 
                         <input type="submit" value="Submit" class="btn btn-lg btn-success">
-                        
+
+
+<br>
+<br>
+
+
                         </div>
                     </form>
                 </div>
@@ -283,6 +284,7 @@ $('.textarea').wysihtml5();
 
 <script src="plugins/js/bootstrap-select.min.js" type="text/javascript"></script>
 <script>
+$('.selectpicker').selectpicker('setStyle', 'btn-white');
 $('.datepicker').datepicker();
     $("select").on("change", function() {
     var value = $(this).val();
@@ -295,7 +297,3 @@ if( /Android|webOS|iPhone|iPad|iPod|BlackBerry/i.test(navigator.userAgent) ) {
 
 </body>
 </html>
-
-
-
-

@@ -7,6 +7,7 @@
 @import 'components/select-custom';
 @import 'partials/chris-icons';
 @import 'partials/chris-animation-styles';
+//@import 'owl/owl.core.scss';
 @import 'partials/palmer';
 
 
@@ -20,8 +21,77 @@ body{margin-top:50px;}
 
 .nav, .pagination, .carousel, .panel-title a { cursor: pointer; }
 
+.thumbnail {
+  display: block;
+  padding: 8px;
+  margin-bottom: 20px;
+  line-height: 1.42857143;
+  background-color: #fff;
+  border: none;
+  border-radius: 4px;
+  -webkit-transition: border .2s ease-in-out;
+  -o-transition: border .2s ease-in-out;
+  transition: border .2s ease-in-out;
+  cursor: pointer;
+}
+
+h4 a {
+  font-weight: bold;
+  color: #000 !important;
+  cursor: pointer;
+  &:hover {
+    cursor: pointer;
+    text-decoration: none;
+  }
+}
 
 
+
+.btn-white {
+  color: #555555;
+  background-color: #FFFFFF;
+  border: 1px solid #ccc !important;
+}
+
+.btn-white:hover,
+.btn-white:focus,
+.btn-white:active,
+.btn-white.active,
+.open .dropdown-toggle.btn-white {
+  color: #555555;
+  background-color: #CCCCCC;
+  border: 1px solid #ccc !important;
+}
+
+.btn-white:active,
+.btn-white.active,
+.open .dropdown-toggle.btn-white {
+  background-image: none;
+}
+
+.btn-white.disabled,
+.btn-white[disabled],
+fieldset[disabled] .btn-white,
+.btn-white.disabled:hover,
+.btn-white[disabled]:hover,
+fieldset[disabled] .btn-white:hover,
+.btn-white.disabled:focus,
+.btn-white[disabled]:focus,
+fieldset[disabled] .btn-white:focus,
+.btn-white.disabled:active,
+.btn-white[disabled]:active,
+fieldset[disabled] .btn-white:active,
+.btn-white.disabled.active,
+.btn-white[disabled].active,
+fieldset[disabled] .btn-white.active {
+  background-color: #FFFFFF;
+  border: 1px solid #ccc;
+}
+
+.btn-white .badge {
+  color: #FFFFFF;
+  background-color: #555555;
+}
 /****** LOGIN MODAL ******/
 .loginmodal-container {
   padding: 30px;
@@ -87,7 +157,7 @@ body{margin-top:50px;}
   /* border: 1px solid #3079ed; */
   border: 0px;
   color: #fff;
-  text-shadow: 0 1px rgba(0,0,0,0.1); 
+  text-shadow: 0 1px rgba(0,0,0,0.1);
   background-color: #4d90fe;
   padding: 17px 0px;
   font-family: roboto;
@@ -111,7 +181,7 @@ body{margin-top:50px;}
   display: inline-block;
   opacity: 0.6;
   transition: opacity ease 0.5s;
-} 
+}
 
 .login-help{
   font-size: 12px;
@@ -2951,7 +3021,7 @@ div.login-box .panel-footer label {
   text-align: left;
 }
 /* =============================================================== */
-/* USER PANEL || ACCOUNT  
+/* USER PANEL || ACCOUNT
 /* =============================================================== */
 .panel-title {
   padding-bottom: 0;
@@ -3191,7 +3261,7 @@ td.ads-details-td {
     width:100%;
     height:100%;
     position:relative;
-    
+
 }
 
 .social-list {
@@ -3226,7 +3296,7 @@ td.ads-details-td {
     display:block;
     clear:both;
     clear:#fff;
-    
+
 }
 
 .parallaxbox * {
@@ -3342,7 +3412,7 @@ td.ads-details-td {
     padding-bottom: 30px;
     padding-top: 30px;
   }
-  
+
   h1 {
     font-size: 24px;
     line-height: 25px;
@@ -3362,7 +3432,7 @@ td.ads-details-td {
     font-size: 16px;
     line-height: 18px;
   }
-  
+
   .page-sidebar {
       padding:0 5px;
   }
@@ -3373,7 +3443,7 @@ td.ads-details-td {
          padding: 5px 4px;
          font-size:11px;
   }
-  
+
 }
 
 @media (min-width: 768px) {
@@ -3385,7 +3455,7 @@ td.ads-details-td {
     text-indent: -9999px;
     opacity: 0;
   }
-  
+
 
 }
 
@@ -3457,10 +3527,10 @@ td.ads-details-td {
     opacity: 1;
     cursor: pointer;
   }
-  
+
   .xs-gap {
       margin-bottom:15px;
- 
+
   }
 
   .icon-down-open-big {
@@ -3579,11 +3649,11 @@ td.ads-details-td {
     margin-right: 2px;
     width: 70px;
   }
-  
+
   .container, body, html {
       min-width:300px;
   }
-  
+
 }
 @media (max-width: 320px) {
     .navbar .container {

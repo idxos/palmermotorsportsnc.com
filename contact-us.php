@@ -8,37 +8,36 @@
     <meta name="apple-mobile-web-app-capable" content="yes">
     <meta name="mobile-web-app-capable" content="yes">
 
-    <link rel="apple-touch-icon" sizes="57x57" href="assets/icons/apple-icon-57x57.png">
-    <link rel="apple-touch-icon" sizes="60x60" href="assets/icons/apple-icon-60x60.png">
-    <link rel="apple-touch-icon" sizes="72x72" href="assets/icons/apple-icon-72x72.png">
-    <link rel="apple-touch-icon" sizes="76x76" href="assets/icons/apple-icon-76x76.png">
-    <link rel="apple-touch-icon" sizes="114x114" href="assets/icons/apple-icon-114x114.png">
-    <link rel="apple-touch-icon" sizes="120x120" href="assets/icons/apple-icon-120x120.png">
-    <link rel="apple-touch-icon" sizes="144x144" href="assets/icons/apple-icon-144x144.png">
-    <link rel="apple-touch-icon" sizes="152x152" href="assets/icons/apple-icon-152x152.png">
-    <link rel="apple-touch-icon" sizes="180x180" href="assets/icons/apple-icon-180x180.png">
-    <link rel="icon" type="image/png" sizes="192x192"  href="assets/icons/android-icon-192x192.png">
-    <link rel="icon" type="image/png" sizes="32x32" href="assets/icons/favicon-32x32.png">
-    <link rel="icon" type="image/png" sizes="96x96" href="assets/icons/favicon-96x96.png">
-    <link rel="icon" type="image/png" sizes="16x16" href="assets/icons/favicon-16x16.png">
-    <link rel="manifest" href="assets/icons/manifest.json">
+    <link rel="apple-touch-icon" sizes="57x57" href="{site_url}assets/icons/apple-icon-57x57.png">
+    <link rel="apple-touch-icon" sizes="60x60" href="{site_url}assets/icons/apple-icon-60x60.png">
+    <link rel="apple-touch-icon" sizes="72x72" href="{site_url}assets/icons/apple-icon-72x72.png">
+    <link rel="apple-touch-icon" sizes="76x76" href="{site_url}assets/icons/apple-icon-76x76.png">
+    <link rel="apple-touch-icon" sizes="114x114" href="{site_url}assets/icons/apple-icon-114x114.png">
+    <link rel="apple-touch-icon" sizes="120x120" href="{site_url}assets/icons/apple-icon-120x120.png">
+    <link rel="apple-touch-icon" sizes="144x144" href="{site_url}assets/icons/apple-icon-144x144.png">
+    <link rel="apple-touch-icon" sizes="152x152" href="{site_url}assets/icons/apple-icon-152x152.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="{site_url}assets/icons/apple-icon-180x180.png">
+    <link rel="icon" type="image/png" sizes="192x192"  href="{site_url}assets/icons/android-icon-192x192.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="{site_url}assets/icons/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="96x96" href="{site_url}assets/icons/favicon-96x96.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="{site_url}assets/icons/favicon-16x16.png">
+    <link rel="manifest" href="{site_url}assets/icons/manifest.json">
     <meta name="msapplication-TileColor" content="#ffffff">
-    <meta name="msapplication-TileImage" content="assets/icons/ms-icon-144x144.png">
+    <meta name="msapplication-TileImage" content="{site_url}assets/icons/ms-icon-144x144.png">
     <meta name="theme-color" content="#ffffff">
     <meta name="apple-mobile-web-app-status-bar-style" content="white">
 
-    <title>Palmer Motorsports Contact Us</title>
+    <title>Palmer Motorsports - Contact Us</title>
     <meta name="description" content="">
     <meta author="Christopher J. Roberts">
 
-    <script src="assets/js/modernizr.js" type="text/javascript"></script>
+    <script src="{site_url}assets/js/modernizr.js" type="text/javascript"></script>
 
     <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap.min.css" rel="stylesheet">
-    <link href="assets/css/palmer-sass-styles.css" rel="stylesheet">
+    <link href="{site_url}assets/css/palmer-sass-styles.css" rel="stylesheet">
 
-      {exp:jquery:script_tag}
 
-  <!--using the jQuery Form plugin http://jquery.malsup.com/form/-->
+  {exp:jquery:script_tag}
   <script src="http://malsup.github.com/jquery.form.js" type="text/javascript"></script>
 
   <script type="text/javascript">
@@ -89,10 +88,10 @@
                             </div>
                         </div>
                     </div>
-                    <div class="social-list"><a target="_blank" href="https://twitter.com/"><i class="fa fa-twitter fa-lg "></i></a>
-                        <a target="_blank" href="https://www.facebook.com/"><i class="fa fa-facebook fa-lg "></i></a>
-                        <a target="_blank" href="https://plus.google.com"><i class="fa fa-google-plus fa-lg "></i></a>
-                        <a target="_blank" href="https://www.pinterest.com/"><i class="fa fa-pinterest fa-lg "></i></a></div>
+                    <div class="social-list"><a target="_blank" href="https://twitter.com/palmermotorsportsnc/"><i class="fa fa-twitter fa-lg "></i></a>
+                        <a target="_blank" href="https://www.facebook.com/palmermotorsportsnc/"><i class="fa fa-facebook fa-lg "></i></a>
+                        <a target="_blank" href="https://plus.google.com/palmermotorsportsnc/"><i class="fa fa-google-plus fa-lg "></i></a>
+                        <a target="_blank" href="https://www.pinterest.com/palmermotorsportsnc/"><i class="fa fa-pinterest fa-lg "></i></a></div>
                 </div>
             </div>
             <div class="col-md-8">
@@ -104,21 +103,21 @@
                                 <div class="col-sm-6">
                                     <div class="form-group">
                                         <div class="col-md-12">
-                                            <input id="firstname" name="name" type="text" placeholder="First Name" class="form-control">
+                                            <input id="firstname" name="first_name" type="text" placeholder="First Name" class="form-control">
                                         </div>
                                     </div>
                                 </div>
                                 <div class="col-sm-6">
                                     <div class="form-group">
                                         <div class="col-md-12">
-                                            <input id="lastname" name="name" type="text" placeholder="Last  Name" class="form-control">
+                                            <input id="lastname" name="last_name" type="text" placeholder="Last Name" class="form-control">
                                         </div>
                                     </div>
                                 </div>
                                 <div class="col-sm-6">
                                     <div class="form-group">
                                         <div class="col-md-12">
-                                            <input id="companyname" name="name" type="text" placeholder="Company Name" class="form-control">
+                                            <input id="companyname" name="company_name" type="text" placeholder="Company Name" class="form-control">
                                         </div>
                                     </div>
                                 </div>
@@ -185,27 +184,23 @@
 <script src="http://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js" type="text/javascript"></script>
 <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/js/bootstrap.min.js" type="text/javascript"></script>
 
-<script src="assets/js/form-validation.js" type="text/javascript"></script>
-<script src="assets/js/jquery.easing.1.3.js" type="text/javascript"></script>
-<script src="assets/js/jquery.matchHeight-min.js" type="text/javascript"></script>
-<script src="assets/js/hideMaxListItem.js" type="text/javascript"></script>
-
-<script src="assets/js/jquery.parallax-1.1.js" type="text/javascript"></script>
-<script src="assets/js/form-validation.js" type="text/javascript"></script>
-<script src="assets/js/jquery.scrollto.js" type="text/javascript"></script>
-
-
-<script src="plugins/lib/moment.min.js" type="text/javascript"></script>
-<script src="plugins/lib/jquery-ui.custom.min.js" type="text/javascript"></script>
-<script src="plugins/js/bootstrap-combobox.js" type="text/javascript"></script>
-<script src="plugins/js/bootstrap-timepicker.js" type="text/javascript"></script>
-<script src="plugins/js/bootstrap_calendar.min.js" type="text/javascript"></script>
-
-<script src="plugins/js/jquery-ui.min.js" type="text/javascript"></script>
-<script src="plugins/js/lightbox.min.js" type="text/javascript"></script>
-<script src="plugins/js/raphael.min.js" type="text/javascript"></script>
-<script src="plugins/js/tag-it.min.js" type="text/javascript"></script>
-<script src="plugins/js/fullcalendar.min.js" type="text/javascript"></script>
+<script src="{site_url}assets/js/form-validation.js" type="text/javascript"></script>
+<script src="{site_url}assets/js/jquery.easing.1.3.js" type="text/javascript"></script>
+<script src="{site_url}assets/js/jquery.matchHeight-min.js" type="text/javascript"></script>
+<script src="{site_url}assets/js/hideMaxListItem.js" type="text/javascript"></script>
+<script src="{site_url}assets/js/jquery.parallax-1.1.js" type="text/javascript"></script>
+<script src="{site_url}assets/js/form-validation.js" type="text/javascript"></script>
+<script src="{site_url}assets/js/jquery.scrollto.js" type="text/javascript"></script>
+<script src="{site_url}plugins/lib/moment.min.js" type="text/javascript"></script>
+<script src="{site_url}plugins/lib/jquery-ui.custom.min.js" type="text/javascript"></script>
+<script src="{site_url}plugins/js/bootstrap-combobox.js" type="text/javascript"></script>
+<script src="{site_url}plugins/js/bootstrap-timepicker.js" type="text/javascript"></script>
+<script src="{site_url}plugins/js/bootstrap_calendar.min.js" type="text/javascript"></script>
+<script src="{site_url}plugins/js/jquery-ui.min.js" type="text/javascript"></script>
+<script src="{site_url}plugins/js/lightbox.min.js" type="text/javascript"></script>
+<script src="{site_url}plugins/js/raphael.min.js" type="text/javascript"></script>
+<script src="{site_url}plugins/js/tag-it.min.js" type="text/javascript"></script>
+<script src="{site_url}plugins/js/fullcalendar.min.js" type="text/javascript"></script>
 
 
 <script>
@@ -214,12 +209,12 @@
     })
 </script>
 
-<script src="plugins/js/bootstrap-wysihtml5.js" type="text/javascript"></script>
+<script src="{site_url}plugins/js/bootstrap-wysihtml5.js" type="text/javascript"></script>
 <script>
 $('.textarea').wysihtml5();
 </script>
 
-<script src="plugins/js/bootstrap-select.min.js" type="text/javascript"></script>
+<script src="{site_url}plugins/js/bootstrap-select.min.js" type="text/javascript"></script>
 <script>
 $('.selectpicker').selectpicker('setStyle', 'btn-white');
 $('.datepicker').datepicker();

@@ -15190,6 +15190,15 @@ body {
 .panel-body .table {
   margin-bottom: 0px; }
 
+.em-15-right {
+  margin-right: 15px; }
+
+.em-15-left {
+  margin-left: 15px; }
+
+fieldset.em-right-340 {
+  margin-right: 340px; }
+
 .nav, .pagination, .carousel, .panel-title a {
   cursor: pointer; }
 

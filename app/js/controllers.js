@@ -7,7 +7,7 @@ var productControllers = angular.module('productControllers', []);
 
 productControllers.controller('ProductListController', ['$scope', 'Product',
   function($scope, Product) {
-    $scope.products = Product.query('');
+    $scope.products = Product.query('description');
     $scope.orderProp = 'list_price';
 
     $scope.byRange = function(fieldName, minValue, maxValue) {

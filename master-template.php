@@ -40,7 +40,7 @@
 
 
 </head>
-<body clas="">
+<body class="">
 <div id="wrapper">
 <!-- ## insert top-nav.php -->
 <div class="main-container">
@@ -247,28 +247,23 @@
 </div><!-- #wrapper -->
 <script src="http://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js" type="text/javascript"></script>
 <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/js/bootstrap.min.js" type="text/javascript"></script>
-
-<script src="assets/js/form-validation.js" type="text/javascript"></script>
-<script src="assets/js/jquery.easing.1.3.js" type="text/javascript"></script>
-<script src="assets/js/jquery.matchHeight-min.js" type="text/javascript"></script>
-<script src="assets/js/hideMaxListItem.js" type="text/javascript"></script>
-
-<script src="assets/js/jquery.parallax-1.1.js" type="text/javascript"></script>
-<script src="assets/js/form-validation.js" type="text/javascript"></script>
-<script src="assets/js/jquery.scrollto.js" type="text/javascript"></script>
-
-
-<script src="plugins/lib/moment.min.js" type="text/javascript"></script>
-<script src="plugins/lib/jquery-ui.custom.min.js" type="text/javascript"></script>
-<script src="plugins/js/bootstrap-combobox.js" type="text/javascript"></script>
-<script src="plugins/js/bootstrap-timepicker.js" type="text/javascript"></script>
-<script src="plugins/js/bootstrap_calendar.min.js" type="text/javascript"></script>
-
-<script src="plugins/js/jquery-ui.min.js" type="text/javascript"></script>
-<script src="plugins/js/lightbox.min.js" type="text/javascript"></script>
-<script src="plugins/js/raphael.min.js" type="text/javascript"></script>
-<script src="plugins/js/tag-it.min.js" type="text/javascript"></script>
-<script src="plugins/js/fullcalendar.min.js" type="text/javascript"></script>
+<script src="{site_url}assets/js/form-validation.js" type="text/javascript"></script>
+<script src="{site_url}assets/js/jquery.easing.1.3.js" type="text/javascript"></script>
+<script src="{site_url}assets/js/jquery.matchHeight-min.js" type="text/javascript"></script>
+<script src="{site_url}assets/js/hideMaxListItem.js" type="text/javascript"></script>
+<script src="{site_url}assets/js/jquery.parallax-1.1.js" type="text/javascript"></script>
+<script src="{site_url}assets/js/form-validation.js" type="text/javascript"></script>
+<script src="{site_url}assets/js/jquery.scrollto.js" type="text/javascript"></script>
+<script src="{site_url}plugins/lib/moment.min.js" type="text/javascript"></script>
+<script src="{site_url}plugins/lib/jquery-ui.custom.min.js" type="text/javascript"></script>
+<script src="{site_url}plugins/js/bootstrap-combobox.js" type="text/javascript"></script>
+<script src="{site_url}plugins/js/bootstrap-timepicker.js" type="text/javascript"></script>
+<script src="{site_url}plugins/js/bootstrap_calendar.min.js" type="text/javascript"></script>
+<script src="{site_url}plugins/js/jquery-ui.min.js" type="text/javascript"></script>
+<script src="{site_url}plugins/js/lightbox.min.js" type="text/javascript"></script>
+<script src="{site_url}plugins/js/raphael.min.js" type="text/javascript"></script>
+<script src="{site_url}plugins/js/tag-it.min.js" type="text/javascript"></script>
+<script src="{site_url}plugins/js/fullcalendar.min.js" type="text/javascript"></script>
 
 
 <script>
@@ -277,12 +272,12 @@
     })
 </script>
 
-<script src="plugins/js/bootstrap-wysihtml5.js" type="text/javascript"></script>
+<script src="{site_url}plugins/js/bootstrap-wysihtml5.js" type="text/javascript"></script>
 <script>
 $('.textarea').wysihtml5();
 </script>
 
-<script src="plugins/js/bootstrap-select.min.js" type="text/javascript"></script>
+<script src="{site_url}plugins/js/bootstrap-select.min.js" type="text/javascript"></script>
 <script>
 $('.selectpicker').selectpicker('setStyle', 'btn-white');
 $('.datepicker').datepicker();

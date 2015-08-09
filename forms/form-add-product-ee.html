@@ -1,0 +1,192 @@
+                {exp:channel:form channel="products"}
+
+                  <div class="row">
+                      <div class="col-lg-6 col-sm-6 col-xs-12">
+                          <div class="form-group">
+                            <label for="title">Title</label>
+                            <input type="text" class="form-control" name="title" id="title" value="{title}" size="50" maxlength="100" onkeyup="liveUrlTitle();" class="form-control" placeholder="New Suzuki XYZ Dirtbike Motorcycle" data-toggle="tooltip" data-placement="bottom" title="A great title needs at least 60 characters.">
+                            <span class="hidden help-block"></span>
+                          </div>
+                      </div>
+                      <div class="col-lg-2 col-sm-2 col-xs-12">
+                          <div class="form-group">
+                              <label for="product_price">Price</label>
+                              <div class="input-group">
+                                  <div class="input-group-addon">$</div>
+                                  <input type="text" class="form-control" name="product_price" id="product_price" value="{product_price}" placeholder="Price">
+                              </div>
+                          </div>
+                      </div>
+                      <div class="col-lg-2 col-sm-2 col-xs-12">
+                          <div class="form-group">
+                              <label for="title">City</label>
+                              <input type="text" class="form-control" placeholder="Denver, NC" name="product_city" id="product_city" value="{product_city}">
+                          </div>
+                      </div>
+                      <div class="col-lg-2 col-sm-2 col-xs-12">
+                          <div class="form-group">
+                              <label for="zip">Zip</label>
+                              <input type="text" class="form-control" placeholder="28037" name="product_zip" id="product_zip" value="{product_zip}">
+                          </div>
+                      </div>
+                  </div>
+
+
+                  <div class="row">
+                      <div class="col-lg-6 col-sm-6 col-xs-12">
+                          <div class="form-group">
+                              <label for="url_title">Url Title</label>
+                            <input type="text" class="form-control" name="url_title" id="url_title" value="{url_title}" maxlength="75" size="50">
+                          </div>
+                      </div>
+                      <div class="col-lg-2 col-sm-2 col-xs-12">
+                          <div class="form-group">
+                              <label for="entry_date">Entry Date</label>
+            
+                                  <input type="text" class="form-control" name="entry_date" id="entry_date" value="{entry_date}" maxlength="23" size="25">
+                
+                          </div>
+                      </div>
+                      <div class="col-lg-2 col-sm-2 col-xs-12">
+                          <div class="form-group">
+                              <label for="expiration_date">Expiration Date</label>
+                              <input type="text" class="form-control" name="expiration_date" id="expiration_date" value="{expiration_date}" maxlength="23" size="25">
+                          </div>
+                      </div>
+                      <div class="col-lg-2 col-sm-2 col-xs-12"><!-- empty for now --></div>
+                  </div>
+
+
+                  <div class="row">
+                      <div class="col-lg-12 col-xs-12">
+                          <div class="form-group">
+                              <label for="product_description">Description</label>
+                              <textarea class="form-control" rows="10" name="product_description" id="product_description" value="{product_description}"></textarea>
+                          </div>
+                      </div>
+                  </div>
+
+
+                  <fieldset>
+
+                      <div class="row">
+                          <div class="col-lg-3 col-sm-3 col-xs-12">
+                              <div class="form-group">
+                                  <label for="product_make">Make</label>
+                                  <select name="product_make" id="product_make" value="{product_make}" class="selectpicker show-tick" data-width="100%" data-style="btn-white" data-container="body">
+                                      {options:product_make}
+                                          <option value="{option_value}"{selected}>{option_name}</option>
+                                      {/options:product_make}
+                                  </select>
+                              </div>
+                          </div>
+                          <div class="col-lg-3 col-sm-3 col-xs-12">
+                              <div class="form-group">
+                                  <label for="product_model">Model</label>
+                                  <input name="product_model" type="text" class="col-lg-12 form-control">
+                              </div>
+                          </div>
+                          <div class="col-lg-3 col-sm-3 col-xs-12">
+                              <div class="form-group">
+                                  <label for="product_year">Year</label>
+                                  <select class="selectpicker show-tick" data-width="100%" data-style="btn-white" data-container="body">
+                                      <option value="2015">2015</option>
+                                      <option value="2014">2014</option>
+                                      <option value="2013">2013</option>
+                                      <option value="2012">2012</option>
+                                      <option value="2011">2011</option>
+                                      <option value="2010">2010</option>
+                                      <option value="2009">2009</option>
+                                      <option value="2008">2008</option>
+                                      <option value="2007">2007</option>
+                                      <option value="2006">2006</option>
+                                      <option value="2005">2005</option>
+                                  </select>
+                              </div>
+                          </div>
+                          <div class="col-lg-3 col-sm-3 col-xs-12">
+                              <div class="form-group">
+                                  <label for="product_title_status">Title Status</label>
+                                  <select class="selectpicker show-tick" data-width="100%" data-style="btn-white" data-container="body" name="product_title_status" id="product_title_status" value="{product_title_status}">
+                                      {options:product_title_status}
+                                        <option value="{option_value}"{selected}>{option_name}</option>
+                                      {/options:product_title_status}
+                                  </select>
+                              </div>
+                          </div>
+                      </div>
+
+
+                      <div class="row">
+                          <div class="col-lg-5 col-sm-5 col-xs-12">
+                              <div class="form-group">
+                                  <label for="product_vin">VIN</label>
+                                  <input name="product_vin" type="text" class="form-control" name="product_vin" id="product_vin" value="{product_vin}">
+                              </div>
+                          </div>
+                          <div class="col-lg-3 col-sm-3 col-xs-12">
+                              <div class="form-group">
+                                  <label for="product_engine_cc">Engine CC's</label>
+                                  <input name="product_engine_cc" type="text" class="form-control" placeholder="150" name="product_engine_cc" id="product_engine_cc" value="">
+                              </div>
+                          </div>
+                          <div class="col-lg-4 col-sm-4 col-xs-12">
+                              <div class="form-group">
+                                  <label for="product_miles">Odometer</label>
+                                  <input name="product_miles" type="text" class="form-control" placeholder="ex: 96 miles" name="product_miles" id="product_miles" value="{product_miles}">
+                              </div>
+                          </div>
+                      </div>
+
+
+                      <div class="row">
+                          <div class="col-lg-3 col-sm-3 col-xs-12">
+                              <div class="form-group">
+                                  <label for="product_condition">Condition</label>
+                                  <select class="selectpicker show-tick" data-width="100%" data-style="btn-white" data-container="body" name="product_condition" id="product_condition" value="{product_condition}">
+                                    {options:product_condition}
+                                      <option value="{option_value}"{selected}>{option_name}</option>
+                                    {/options:product_condition}
+                                  </select>
+                              </div>
+                          </div>
+                          <div class="col-lg-3 col-sm-3 col-xs-12">
+                              <div class="form-group">
+                                  <label for="product_paint">Paint</label>
+                                  <select class="selectpicker show-tick" data-width="100%" data-style="btn-white" data-container="body" name="product_color" id="product_color" value="{product_color}">
+                                    {options:product_color}
+                                      <option value="{option_value}"{selected}>{option_name}</option>
+                                    {/options:product_color}
+                                  </select>
+                              </div>
+                          </div>
+                          <div class="col-lg-3 col-sm-3 col-xs-12">
+                              <div class="form-group">
+                                  <label for="product_fuel_type">Fuel Type</label>
+                                  <select class="selectpicker show-tick" data-width="100%" data-style="btn-white" data-container="body" name="product_fuel_type" id="product_fuel_type" value="{product_fuel_type}">
+                                    {options:product_fuel_type}
+                                      <option value="{option_value}"{selected}>{option_name}</option>
+                                    {/options:product_fuel_type}
+                                  </select>
+                              </div>
+                          </div>
+                          <div class="col-lg-3 col-sm-3 col-xs-12">
+                              <div class="form-group">
+                                  <label for="product_transmission">Transmission</label>
+                                  <select class="selectpicker show-tick" data-width="100%" data-style="btn-white" data-container="body" name="product_transmission" id="product_transmission" value="">
+                                      {options:product_transmission}
+                                          <option value="{option_value}"{selected}>{option_name}</option>
+                                      {/options:product_transmission}
+                                  </select>
+                              </div>
+                          </div>
+                      </div>
+                  </fieldset>
+
+                    <div class="row">
+                        <div class="col-lg-12 col-sm-12 col-xs-12">
+                            <input type="submit" value="Submit" class="btn btn-lg btn-success">
+                        </div>
+                    </div>
+
+                {/exp:channel:form}
